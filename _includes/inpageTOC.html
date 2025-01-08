@@ -1,0 +1,7 @@
+<h4>Table of Contents<br></h4>
+{% for listloop in site.lessons %}
+{% if page.structurehead == listloop.structurehead %}
+{% if listloop.layout == "lesson" %}
+<a href="{{ site.baseurl }}{{ listloop.permalink }}">Lesson Group {{ listloop.title }}<a/><br>{% endif %}
+{% if listloop.layout == "sublesson" %}
+<a href="{{ site.baseurl }}{{ listloop.permalink }}">Lesson {{ listloop.lessonprint }}<a/><br>{% endif %}{% endif %}{% endfor %}

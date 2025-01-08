@@ -1,0 +1,20 @@
+title:
+affiliation:
+
+baseurl: /dhhtoolkit
+
+collections:
+  lessons:
+    output: true
+  about:
+    output: true
+    
+exclude :
+    - Gemfile
+    - Gemfile.lock
+    - CNAME
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - vendor/bundle
+    

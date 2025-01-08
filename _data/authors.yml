@@ -1,0 +1,30 @@
+main:
+- authorlookup: spurcell
+  name: Sean Purcell
+  affiliation: University of California San Francisco
+  title: Digital Health Humanities Program
+  association: lead
+  bio:
+  headshot:
+  github:
+  
+- authorlookup: pilieva
+  name: Polina Ilieva
+  affiliation: University of California San Francisco
+  association: lead
+  bio:
+  headshot:
+  
+- authorlookup: cagostini
+  name: Caterina Agostini
+  affiliation: Indiana University
+  association: consultant
+  bio:
+  headshot:
+  
+- authorlookup: schou
+  name: Sutina Chou
+  affiliation: University of California San Francisco
+  association: awardee
+  headshot: n/a
+  

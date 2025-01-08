@@ -1,0 +1,11 @@
+---
+permalink: /about/ecueva
+name: Edmund Cueva
+affiliation: "University of Houston-Downtown"
+association: awardee
+headshot: cueva.jpg
+bio: "Edmund P. Cueva, PhD is an award-winning professor of classics and humanities at the University of Houston-Downtown. His interests include the ancient Graeco-Roman novel, medical humanities, and ancient literature and the occult. His research is currently on the intersection of horror and ancient literature and art. His most recent book is on horror and literature, Horror in Antiquity (University of Wales Press, 2024), and he has a forthcoming book that partially focuses on HIV/AIDS and the film The Hunger (University of Liverpool Press; expected in 2025; a monograph on Tony Scott’s 1983 movie; an addition to the press’ Devil’s Advocate Series)."
+projecttitle: "Examining Horror-Related Language in Early HIV/AIDS Discourse"
+projectblurb: "The project aims to answer this research question: How did the use of horror-related language in media and public discourse influence societal perceptions and stigmatization of HIV/AIDS during the onset of the epidemic in the United States?<br>During the early stages of the HIV/AIDS epidemic in the United States, the use of horror-related language and imagery in media and public discourse manipulated how people viewed and stigmatized the disease. Words/phrases like “vampire” (or its cognates), “pollution,” “plague,” “death sentence,” and “infectious monster” heightened the alarm and misunderstandings about the disease, leading to increased stigma and discrimination against affected individuals. This language also affected public health policies and responses, often resulting in punitive measures rather than benevolent approaches. Mainstream media and communication perpetuated these fear-inducing narratives, while alternative media occasionally offered different perspectives. Overall, the horror-themed discourse surrounding HIV/AIDS not only increased the collective fear but also thwarted effective public health interventions and intensified the disregard for affected individuals."
+layout: bio
+---
