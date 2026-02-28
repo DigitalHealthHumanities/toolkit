@@ -1,9 +1,16 @@
 
-.navbar-default {
+.navbar > div > a:hover, .navbar > div > div > ul > li > a:hover {
+    color: #60D0DA
+}
+
+.dhht-navbar-default {
     background-image: none;
     background-color: #052049;
-
 }
+
+
+
+
 
 .dropdown-item, .nav-link, .navbar-brand, .nav-item {
     color: #ffffff;
