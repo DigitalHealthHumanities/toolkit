@@ -17,4 +17,5 @@ exclude :
     - README.md
     - INSTALL.md
     - vendor/bundle
+    - vendor/cache
     
