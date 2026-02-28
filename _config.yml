@@ -1,5 +1,7 @@
-title:
+title: Digital Health Humanities Toolkit
 affiliation:
+sass:
+  style: compressed
 
 baseurl: /toolkit
 
@@ -8,6 +10,34 @@ collections:
     output: true
   about:
     output: true
+
+# --------------------------------------------------------------
+# SITE MENU SETTINGS
+# --------------------------------------------------------------
+# Each menu item needs a `label` (whats shown), and a `link`
+# (where it goes). An item can optionally have a dropdown
+# submenu via `sub`.
+
+menu:
+  - label: 'About'
+    link: '#'
+  - label: 'Lessons'
+    link: '#'
+  - label: 'White Paper'
+    link: '#'
+  - label: 'Resources'
+    link: '#'
+
+# --------------------------------------------------------------
+# SITE FOOTER SETTINGS
+# --------------------------------------------------------------
+#
+
+footer:
+  links:
+    - label: 'UCSF'
+    - label: 'GitHub'
+
     
 exclude :
     - Gemfile

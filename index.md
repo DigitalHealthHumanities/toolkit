@@ -1,9 +1,11 @@
 ---
 type: page
 ---
+{% include head.html %}
+
 {% include heading.html %}
 
-<h1><a href="{{ site.baseurl }}/lessons">Lessons</a></h1>
+<h1 class="primary"><a href="{{ site.baseurl }}/lessons">Lessons</a></h1>
 {% for sectionloop in site.lessons %}
 {% if sectionloop.layout == "lessongroup" %}
 <a href="{{ site.baseurl }}{{ sectionloop.permalink }}">{{ sectionloop.title }}</a>

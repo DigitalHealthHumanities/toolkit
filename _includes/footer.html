@@ -1,1 +1,11 @@
-<p style="color:white;text-align:center;background-color:black">The Digital Health Humanities Toolkit was developed at the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+
+
+<nav id='dhht-header' class='navbar navbar-default navbar-expand-lg'>
+    <div class="container-fluid">
+        <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+            the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+        {% for item in site.footer.links %}
+            <a href="#" class="nav-item">{{ item.label }}</a>
+        {% endfor %}
+    </div>
+</nav>
