@@ -5,7 +5,7 @@ type: page
 
 {% include heading.html %}
 
-<div class="dhht-container">
+<div class="dhht-container d-flex flex-column">
     <h1 class="primary"><a href="{{ site.baseurl }}/lessons">Lessons</a></h1>
     {% for sectionloop in site.lessons %}
     {% if sectionloop.layout == "lessongroup" %}

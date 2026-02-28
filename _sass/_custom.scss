@@ -36,13 +36,19 @@
             padding-left: 1.75rem;
         }
         .dhht-container {
-            margin: 0.5 rem;
-            padding: 0.5 rem
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 3rem;
+            padding-right: 3rem;
         }
 }
 
 
-
+html {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 4rem
+}
 
 .navbar > div > a:hover, .navbar > div > div > ul > li > a:hover {
     color: #60D0DA
@@ -54,9 +60,19 @@
 }
 
 #dhht-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding-top: 2rem;
     padding-bottom: 3rem;
     
+}
+
+.dhht-container {
+    width: 100vw;
+    max-width: 100%;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
 }
 
 .dropdown-item, .nav-link, .navbar-brand, .nav-item {
