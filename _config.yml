@@ -23,6 +23,8 @@ menu:
     link: '#'
   - label: 'Lessons'
     sub:
+      - label: 'All Lessons'
+        link: 'lessons/'
       - label: 'Digital Basics'
         link: 'lessons/databasics'
       - label: 'Project Management'
