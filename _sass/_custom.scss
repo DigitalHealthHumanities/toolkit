@@ -10,6 +10,22 @@
         margin: 1.0rem;
         padding: 0.75rem;
     }
+
+    h1 {
+        font-size: 2.0rem
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    a, p, li {
+        font-size: 1.1rem;
+    }
 }
 @media (min-width: 451px) {
     #dhht-header {
@@ -24,6 +40,28 @@
     .dhht-container {
         margin: 1.0rem;
         padding: 1.0rem;
+    }
+
+    h1 {
+        font-size: 2.6rem
+    }
+
+    h2 {
+        font-size: 2.0rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    a,
+    p,
+    li {
+        font-size: 1.1rem;
+    }
+
+    span {
+        font-size: 1.0rem;
     }
 }
 
@@ -80,20 +118,4 @@ html {
     color: #ffffff;
 }
 
-h1 {
-    font-size: 2.6rem
-}
-h2 {
-    font-size: 2.0rem;
-}
-h3 {
-    font-size: 1.5rem;
-}
 
-a, p, li {
-    font-size: 1.1rem;
-}
-
-span {
-    font-size: 1.0rem;
-}
