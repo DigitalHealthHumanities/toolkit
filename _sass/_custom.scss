@@ -1,18 +1,23 @@
 @media  (max-width: 450px) {
     #dhht-header {
-        padding: 0.5rem
+        padding-top: 1.0rem;
+        padding-bottom: 1.0rem;
+        padding-left: 0.5rem
     }
     #dhht-footer {
-        padding-left: 1.5rem;
+        padding: 1.5rem;
+        padding-top: 1.0rem;
     }
 
     .dhht-container {
         margin: 1.0rem;
         padding: 0.75rem;
+        padding-bottom: 7rem;
     }
 
     h1 {
-        font-size: 2.0rem
+        font-size: 2.0rem;
+        font-weight: bold
     }
 
     h2 {
@@ -23,7 +28,7 @@
         font-size: 1.2rem;
     }
 
-    a, p, li {
+    p, li {
         font-size: 1.1rem;
     }
 }
@@ -34,7 +39,9 @@
 
     #dhht-footer {
         padding-left: 1.75rem;
-        padding-right: 1.75rem
+        padding-right: 1.75rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
     }
 
     .dhht-container {
@@ -43,7 +50,8 @@
     }
 
     h1 {
-        font-size: 2.6rem
+        font-size: 2.4rem;
+        font-weight: bold;
     }
 
     h2 {
@@ -54,9 +62,8 @@
         font-size: 1.5rem;
     }
 
-    a,
-    p,
-    li {
+
+    p, li {
         font-size: 1.1rem;
     }
 
@@ -69,16 +76,28 @@
     #dhht-header {
             padding: 1.0rem
         }
+
+    #dhht-footer {
+        padding-left: 1.75rem;
+    }
+    .dhht-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    h2 {
+        font-weight: 600
+    }
+
+    h3 {
+        font-weight: 500
+    }
+
     
-        #dhht-footer {
-            padding-left: 1.75rem;
-        }
-        .dhht-container {
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 3rem;
-            padding-right: 3rem;
-        }
 }
 
 body {
@@ -104,18 +123,11 @@ html {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    
-}
-
-.dhht-container {
-    padding-bottom: 5rem;
-    padding-top: 1rem;
 }
 
 .dropdown-item, .nav-link, .navbar-brand, .nav-item {
     color: #ffffff;
 }
+
 
 
