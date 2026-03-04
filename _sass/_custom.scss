@@ -67,9 +67,6 @@
         font-size: 1.1rem;
     }
 
-    span {
-        font-size: 1.0rem;
-    }
 }
 
 @media (min-width: 821px) {
@@ -129,6 +126,10 @@ html {
     }
 }
 
+.dhht-definition {
+    background-color: #B4E2E8;
+}
+
 #dhht-footer {
     position: absolute;
     bottom: 0;
@@ -137,6 +138,16 @@ html {
 
 .dropdown-item, .nav-link, .navbar-brand, .nav-item {
     color: #ffffff;
+}
+
+.highlighter {
+    background-color: #FEB80A;
+    font-weight: 500
+}
+
+.term {
+    color: #E61048;
+    font-weight: 600
 }
 
 
