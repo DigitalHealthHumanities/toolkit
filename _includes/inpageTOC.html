@@ -1,7 +1,14 @@
-<h4>Table of Contents<br></h4>
-{% for listloop in site.lessons %}
-{% if page.structurehead == listloop.structurehead %}
-{% if listloop.layout == "lesson" %}
-<a href="{{ site.baseurl }}{{ listloop.permalink }}">Lesson Group {{ listloop.title }}<a/><br>{% endif %}
-{% if listloop.layout == "sublesson" %}
-<a href="{{ site.baseurl }}{{ listloop.permalink }}">Lesson {{ listloop.lessonprint }}<a/><br>{% endif %}{% endif %}{% endfor %}
+<h4>Table of Contents</h4>
+
+<div class="card w-50 mb-3">
+    <ul class="list-group list-group-flush">
+        {% assign toc = site.lessons | where: "structurehead", page.structurehead %}
+        {% for listloop in toc %}
+            {% if listloop.layout == "lesson" %}
+            <li class="list-group-item"><a href="{{ site.baseurl }}{{ listloop.permalink }}">Lesson Group {{ listloop.title }}</a></li>
+            {% elsif listloop.layout == "sublesson" and listloop.nest != "mac" and listloop.nest != "windows" %}
+            <li class="list-group-item"><a href="{{ site.baseurl }}{{ listloop.permalink }}">Lesson {{ listloop.lessonprint }} {{ listloop.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
