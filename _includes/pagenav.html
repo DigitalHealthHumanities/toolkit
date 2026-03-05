@@ -1,7 +1,7 @@
 <div class="row mt-4">
-    {% if page.previouslesson != "n/a" and page.nest != "header" %}
+    {% if page.nest != "header" %}
         <div class="col-2">
-        {% if page.split == "back" %}
+        {% if page.previouslesson == "n/a" and page.split == "back" %}
             <a href="{{ site.baseurl }}{{ page.splitmac }}" class="btn btn-primary" role="button">Previous Lesson for Mac Users</a>.
             <a href="{{ site.baseurl }}{{ page.splitpc }}" class="btn btn-primary" role="button">Previous Lesson for Windows Users</a>.
         {% else %}
@@ -9,14 +9,20 @@
         {% endif %} 
         </div>
     {% endif %}
-    {% if page.nextlesson != "n/a" %}
-        <div class="col-2">
+    {% if page.nextlesson %}
         {% if page.split == "split" %}
-            <a href="{{ site.baseurl }}{{ page.splitmac }}" class="btn btn-primary" role="button">Next Lesson for Mac Users</a>. 
+            <div class="col-2">
+            <a href="{{ site.baseurl }}{{ page.splitmac }}" class="btn btn-primary" role="button">Next Lesson for Mac Users</a>.
+            </div>
+            <div class="col-2">
             <a href="{{ site.baseurl }}{{ page.splitpc }}" class="btn btn-primary" role="button">Next Lesson for Windows Users</a>.
+            </div>
         {% elsif page.nextlesson %}
+            <div class="col-2">
             <a href="{{ site.baseurl }}{{ page.nextlesson }}" class="btn btn-primary" role="button">Next Lesson</a>.
+            </div>
         {% endif %}
         </div>
     {% endif%}
 </div>
+
