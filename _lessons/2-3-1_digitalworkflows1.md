@@ -13,7 +13,7 @@ nest: nonest
 For this first activity, we will think about how different programs work together to produce a final research output—a journal article, a book, a digital humanities project. For this activity, we will think about the production of a network graph for a journal article.
 The first question to ask is, what is your deliverable?
 
-**Important Term – Deliverable:** Deliverables are concrete materials which are prepared to be shared with others, based on yours and your receiver’s expectations. These can be very polished—like a published book manuscript—or something that is a work in progress—like a draft you submit to a writing group. Deliverables are most important because they give us clear goals to work toward, and help benchmark progress.
+{% include definition.html term="Deliverable" definition="Deliverables are concrete materials which are prepared to be shared with others, based on yours and your receiver’s expectations. These can be very polished—like a published book manuscript—or something that is a work in progress—like a draft you submit to a writing group. Deliverables are most important because they give us clear goals to work toward, and help benchmark progress." %}
 
 For this exercise, we are going to think about publishing this essay in a peer-reviewed, print-based journal in the history of medicine. The idea here is that we will work backwards from a very traditional research output, rather than think about something that might be more digitally specific—like a born-digital journal like the Journal of Digital History. We are using a history journal to think about primary, archival data. 
 
@@ -21,7 +21,7 @@ What might the journal need from its authors for a finished publication? A manus
 
 Before we even get to the network analysis elements, what other programs might we use for the written materials? We need a text editor--Microsoft Word or Google Docs or Open Office or Scrivener. We probably have images, which might need small edits so we should consider an image editor—Adobe Photoshop or GIMP. We also should use a citation manager—Zotero or OneNote. And we may need to generate tables and other figures which may need its own program—Tableau, Airtable, or Microsoft Excel. For just the written components we may have a workflow that looks like this.
 
-<img src="{{ site.baseurl }}/assets/img/workflow1.jpg">
+<img src="{{ site.baseurl }}/assets/img/workflow1.jpg" class="example-img" alt="Microsoft Word and Supplemental Exports flow into the Final Manuscript. Citation Manager, Figure Editor, and Image Editor flow into Microsoft Word while Figure Editor and Image Editor flow into Supplemental Exports.">
 
 You may notice that some of these programs need to be used outside of Microsoft Word for the submission. Often journals require unique files as part of their submissions if you have images or tables. This workflow is relatively, at least when broken down into the most simple elements, assuming you are not processing data, generating findings with programs or digital platforms.
 
@@ -31,7 +31,7 @@ Usually it is better to use Gephi as the network generator, but the data entry s
 
 The workflow would look something like this
 
-<img src="{{ site.baseurl }}/assets/img/workflow2.jpg">
+<img src="{{ site.baseurl }}/assets/img/workflow2.jpg" class="example-img" alt="Comma Separated Value file > Gephi > Image File">
 
 Let’s think about two things. The first question is, how does this workflow fit into the manuscript workflow?
 
@@ -43,7 +43,7 @@ Once you have done that, check it against this workflow.
 
 <h3><details>
 	<summary>Solution</summary>
-	<img src="{{ site.baseurl }}/assets/img/workflow3.jpg">
+	<img src="{{ site.baseurl }}/assets/img/workflow3.jpg" class="example-img" alt="This workflow combines the first and second, with Gephi flowing into Image File, which in turn flows into the Image Editor from the first diagram.">
 </details></h3>
 
 Most of the information from Gephi is going into images, which might also need to be cleaned up (resized or made into a different file format). We could also draw a line Gephi directly to Microsoft word because it is informing our writing, but this flow chart is going to get messy quick, so for sake of simplicity I have left that out.
@@ -56,7 +56,7 @@ Add Microsoft Excel to your sketched workflow. It should connect to Gephi in som
 
 <h3><details>
 	<summary>Example with Gephi</summary>
-	<img src="{{ site.baseurl }}/assets/img/workflow4.jpg">
+	<img src="{{ site.baseurl }}/assets/img/workflow4.jpg" class="example-img" alt="In the final form of the diagram, Microsoft Excel flows into both the Comma Separated Value file and the Figure Editor.">
 </details></h3>
 
 I added Microsoft Excel because it probably is going to be used in both the creation of .csv files for Gephi and for use in making figures.

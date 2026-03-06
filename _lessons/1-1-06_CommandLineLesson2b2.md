@@ -19,7 +19,7 @@ split: none
 
 When we open the Command Prompt, we’ll start in the same place: your user folder. This is what a user folder might look like. (You can access it by clicking on your OSDisk, which is the C drive for this computer, clicking on the folder titled ‘Users’ and clicking on the folder with your username. For this example the user is ‘spurcell’.) 
 
-![](/assets/CLWin2.jpg)
+<img src="{{ site.baseurl }}/assets/img/CLWin2.jpg" class="example-img" alt="User Folder Contents at 'This PC > OSDisc(C:) > Users > spurcell'" />
 
 If you are lost, you can always use the GUI folder hierarchy to help you search, because they are looking at the same thing. 
 
@@ -29,13 +29,14 @@ Let’s write our first command. Type the following into the Command Prompt:
 
 This command—‘dir’—is short for ‘directory’. It will output all of the potential directories and files that you can access from your current place in the computer. 
 
-<p style:"margin-left: 80px">**Important Term: Directory –** A directory is a collection of files and directories which the command line accesses. Often, we call them folders, largely because of their iconography in contemporary GUIs</p>
+{% include definition.html term="Directory" definition="A directory is a collection of files and directories which the command line accesses. Often, we call them folders, largely because of their iconography in contemporary GUIs" %}
 
 The ‘dir’ command can help us if we are lost, or if we do not know what directories of files we have access to at a given moment.
 
 Let’s look at that output from that command. This is how it looks like on my computer: 
 
-![](assets/CLWin3.jpg)
+
+<img src="{{ site.baseurl }}/assets/img/CLWin3.jpg" class="example-img" alt="Folders in the Directory of C:\Users\spurcell, including 'Downloads'" />
 
 I can see the folder ‘downloads’ in the directory, which means that I can move to that folder in the Command Prompt. To do this, we will need to use a different command, ‘cd’ or change directory. 
 
