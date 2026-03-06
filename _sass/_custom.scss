@@ -123,6 +123,13 @@ body {
     background-color: #60D0DA;
 }
 
+code, pre code {
+    background-color: black;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-left: 1.0rem;
+    margin-left: 1.5rem
+}
 
 .dhht-container {
     flex-grow: 1;
