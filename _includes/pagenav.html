@@ -7,7 +7,7 @@
             <div class="col-5 col-md-3 col-lg-2 btn-group">
                 <a href="{{ site.baseurl }}{{ page.splitpc }}" class="btn btn-info" role="button">Previous Lesson for Windows Users</a>.
             </div>
-        {% elsif page.previouslesson != 'n/a' %}
+        {% elsif page.previouslesson and page.previouslesson != 'n/a' %}
             <div class="col-5 col-md-3 col-lg-2 btn-group">
                 <a href="{{ site.baseurl }}{{ page.previouslesson }}" class="btn btn-primary" role="button">Previous Lesson</a>.
             </div>
