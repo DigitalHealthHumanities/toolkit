@@ -4,6 +4,7 @@
         padding-bottom: 1.0rem;
         padding-left: 0.5rem
     }
+
     #dhht-footer {
         padding: 1.5rem;
         padding-top: 1.0rem;
@@ -12,7 +13,10 @@
     .dhht-container {
         margin: 1.0rem;
         padding: 0.75rem;
-        padding-bottom: 7rem;
+    }
+
+    .example-img {
+        width: 100%;
     }
 
     h1 {
@@ -49,6 +53,10 @@
         padding: 1.0rem;
     }
 
+    .example-img {
+        width: 75%;
+    }
+
     h1 {
         font-size: 2.4rem;
         font-weight: bold;
@@ -82,8 +90,6 @@
         margin-right: auto;
         padding-left: 4rem;
         padding-right: 4rem;
-        margin-bottom: 4rem;
-        padding-bottom: 4rem;
     }
 
     h2 {
@@ -98,17 +104,18 @@
 }
 
 body {
-    font-family: "Helvetica Neue Light", Arial, sans-serif
-}
-
-html {
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 4rem;
+    font-family: "Helvetica Neue Light", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar > div > a:hover, .navbar > div > div > ul > li > a:hover {
     color: #60D0DA
+}
+
+.dhht-container {
+    flex-grow: 1;
 }
 
 .dhht-navbar-default {
@@ -131,13 +138,18 @@ html {
 }
 
 #dhht-footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 .dropdown-item, .nav-link, .navbar-brand, .nav-item {
     color: #ffffff;
+}
+
+.example-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .highlighter {
