@@ -18,7 +18,9 @@ format: lessongroup
         </button>
       </h2>
     </div>
-    {% include tocaccordion.html lesson=lesson %}
+    <div class="accordion-body">
+      {% include tocaccordion.html lesson=lesson %}
+    </div>
   {% endfor %}
 </div>
 
