@@ -114,6 +114,16 @@ body {
     color: #60D0DA
 }
 
+.accordion-button {
+    background-color: #B4E2E8;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #60D0DA;
+}
+
+
 .dhht-container {
     flex-grow: 1;
 }
