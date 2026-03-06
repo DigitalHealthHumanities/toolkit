@@ -1,12 +1,28 @@
 ---
-layout: default
+layout: page
 format: lessongroup
 ---
 
-{% include heading.html %}
+<h1>{{ page.title }}</h1>
 
-<h1 class="center"><a href="{{ site.baseurl }}{{ page.permalink }}">{{ page.title }}</a></h4>
-<h4 class="sans center">{{ page.abstract }}</h1>
+<h4>{{ page.description }}</h4>
+
+<div class="accordion" id="accordion-{{ page.title }}">
+  {% assign lessongroup = site.lessons | where: "group", page.group | where: "layout", "lesson" %}
+  {% for lesson in lessongroup %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="lessongroup-{{ lesson.structurehead }}">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedAccordion-{{ lesson.structurehead }}"
+          aria-expanded="false" aria-controls="collapseOne">
+          {{ lesson.title }}
+        </button>
+      </h2>
+    </div>
+    {% include tocaccordion.html lesson=lesson %}
+  {% endfor %}
+</div>
+
+<!-- 
 
 <p style="margin-left: 80px"><Lesson {{ secondloop.lessonprint }}: <a href="{{ secondloop.permalink }}">{{ secondloop.title }}</a><br></p>
 
@@ -35,6 +51,5 @@ format: lessongroup
 {% endfor %}
 {% endif %}
 {% endif %}
-{% endfor %}
+{% endfor %} -->
 
-{% include footer.html %} 

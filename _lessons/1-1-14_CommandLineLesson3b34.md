@@ -52,7 +52,7 @@ Now run that command:
 
 You should have in that outputs directory a new file named tuberculinfind.txt and it should look like this: 
 
-![]({{ site.baseurl }}/assets/img/CLWin8.jpg)
+<img src="{{ site.baseurl }}/assets/img/CLWin8.jpg" class="example-img" />
 
 Now try to do the same with the findstr command. 
 

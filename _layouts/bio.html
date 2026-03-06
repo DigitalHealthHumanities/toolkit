@@ -1,4 +1,6 @@
-{% include heading.html %}
+---
+layout: page
+---
 
 {% for biomd in site.about %}
 {% if biomd.name == page.name %}
@@ -17,4 +19,3 @@
 {% endif %}
 {% endfor %}
 
-{% include footer.html %}
