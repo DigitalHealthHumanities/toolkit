@@ -7,7 +7,7 @@ format: lessongroup
 
 <h4>{{ page.description }}</h4>
 
-<div class="accordion" id="accordion-{{ page.title }}">
+<div class="accordion dhht-accordion" id="accordion-{{ page.title }}">
   {% assign lessongroup = site.lessons | where: "group", page.group | where: "layout", "lesson" %}
   {% for lesson in lessongroup %}
     <div class="accordion-item">
@@ -18,7 +18,9 @@ format: lessongroup
         </button>
       </h2>
     </div>
-    {% include tocaccordion.html lesson=lesson %}
+    <div class="accordion-body">
+      {% include tocaccordion.html lesson=lesson %}
+    </div>
   {% endfor %}
 </div>
 

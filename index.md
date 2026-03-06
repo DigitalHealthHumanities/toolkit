@@ -8,7 +8,7 @@ type: page
 <div class="dhht-container d-flex flex-column">
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
-    <p>Read the White Paper <a href="{{ site.baseurl }}/white-paper">here</a></p>
+    <p>Read the <a href="{{ site.baseurl }}/white-paper">White Paper</a></p>
     <h2>Lessons</h2>
     <div class="row mt-2 mb-3">
     <!-- Pull lessongroups and generate cards -->
