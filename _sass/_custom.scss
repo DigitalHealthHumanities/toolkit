@@ -1,4 +1,4 @@
-@media  (max-width: 450px) {
+@media (max-width: 450px) {
     #dhht-header {
         padding-top: 1.0rem;
         padding-bottom: 1.0rem;
@@ -79,12 +79,13 @@
 
 @media (min-width: 821px) {
     #dhht-header {
-            padding: 1.0rem
-        }
+        padding: 1.0rem
+    }
 
     #dhht-footer {
         padding-left: 1.75rem;
     }
+
     .dhht-container {
         margin-left: auto;
         margin-right: auto;
@@ -99,8 +100,6 @@
     h3 {
         font-weight: 500
     }
-
-    
 }
 
 a {
@@ -126,15 +125,15 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #60D0DA;
+    background-color: #16A0AC;
+    color: #ffffff
 }
 
-code, pre code {
-    background-color: black;
+code,pre code {
+    background-color: #000000;
     color: #ffffff;
-    font-size: 1.2rem;
-    padding-left: 1.0rem;
-    margin-left: 1.5rem
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 .dhht-container {
@@ -157,6 +156,9 @@ code, pre code {
 }
 
 .dhht-definition {
+    .term {
+        font-size: 1.5em
+    }
     background-color: #B4E2E8;
 }
 
@@ -188,14 +190,14 @@ code, pre code {
 
 .list-split-sublesson {
     margin-left: 1.5rem;
-    color: black;
+    color: #000000;
     text-decoration: none;
 }
 
 .term {
-    color: #E61048;
-    font-weight: 600
+    font-weight: 600;
 }
 
-
-
+p>.term {
+    color: #16A0AC
+}

@@ -5,3 +5,4 @@
 _site
 Gemfile.lock
 vendor/cache
+.DS_Store
