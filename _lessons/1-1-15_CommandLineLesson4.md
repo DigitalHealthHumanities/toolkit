@@ -19,9 +19,7 @@ Using the tools you have learned in this lesson, I want you to create a new file
 
 Remember: you do not have to search each of these three terms separately. There is a function we learned in this lesson that will help you search multiple words with a similar beginning or ending. 
 
-Spoiler: Meningeal Tuberculosis Search (Windows) 
-
-    findstr /i “mening*” *.txt > outputs\meningealsearch.txt 
+{% include spoiler.html problem="MTSearch-Windows" title=" Meningeal Tuberculosis Search (Windows) " answer="<code>findstr /i “mening*” *.txt > outputs\meningealsearch.txt </code>" %}
 
 What can we do with this text file?? We counted terms earlier in this lesson (see sections 3b.1 and [!!!mac version]), and that helped us find specific texts that focused on specific interests in the period. But now we are generating texts, which are themselves too long to gloss. 
 
