@@ -11,6 +11,8 @@ collections:
     output: true
   about:
     output: true
+  papers:
+    output: true
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS
@@ -33,7 +35,7 @@ menu:
       - label: 'Data Ethics'
         link: 'lessons/dataethics'
   - label: 'White Paper'
-    link: '#'
+    link: '/white-paper'
   - label: 'Resources'
     link: '#'
 
