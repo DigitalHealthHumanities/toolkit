@@ -23,9 +23,9 @@ When we open the Command Prompt, we’ll start in the same place: your user fold
 
 If you are lost, you can always use the GUI folder hierarchy to help you search, because they are looking at the same thing. 
 
-Let’s write our first command. Type the following into the Command Prompt:
+Let’s write our first command. Type the following into the Command Prompt: <code>dir</code>
 
-    dir
+{% include blockquote.html quote="Displays a list of a directory's files and subdirectories. If used without parameters, this command displays the disk's volume label and serial number, followed by a list of directories and files on the disk (including their names and the date and time each was last modified). For files, this command displays the name extension and the size in bytes. This command also displays the total number of files and directories listed, their cumulative size, and the free space (in bytes) remaining on the disk." title="'dir', Windows Server Documentation" %}
 
 This command—‘dir’—is short for ‘directory’. It will output all of the potential directories and files that you can access from your current place in the computer. 
 
