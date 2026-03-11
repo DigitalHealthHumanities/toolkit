@@ -10,7 +10,13 @@
         <div id="answer-{{ include.problem }}" class="accordion-collapse collapse"
             aria-labelledby="headingOne" data-bs-parent="#spoiler-{{ include.problem }}">
             <div class="accordion-body">
-                <p>{{ include.answer }}</p>
+                {% if include.image %}
+                    <img src="{{ site.baseurl }}{{ include.image }}" class="example-img" alt="{{ include.alt }}" />
+                    <p class="caption">{{ include.caption }}</p>
+                {% endif %}
+                {% if include.answer %}
+                    <p>{{ include.answer }}</p>
+                {% endif %}
             </div>
         </div>
     </div>
