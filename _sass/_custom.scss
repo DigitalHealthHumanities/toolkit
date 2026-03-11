@@ -65,11 +65,11 @@
     }
 
     h2 {
-        font-size: 2.0em;
+        font-size: 1.6em;
     }
 
     h3 {
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
 
@@ -136,6 +136,10 @@ body {
     padding: 1.0em
 }
 
+.caption {
+    font-style: italic;
+}
+
 code,pre code {
     background-color: #000000;
     color: #ffffff;
@@ -181,6 +185,11 @@ code,pre code {
 }
 
 .example-img {
+    img {
+        max-height: 600px;
+        min-width: 75%;
+        overflow: scroll;
+    }
     display: block;
     margin-left: auto;
     margin-right: auto
