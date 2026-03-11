@@ -31,7 +31,7 @@ Usually it is better to use Gephi as the network generator, but the data entry s
 
 The workflow would look something like this
 
-<img src="{{ site.baseurl }}/assets/img/workflow2.jpg" class="example-img" alt="Comma Separated Value file > Gephi > Image File">
+{% include imgwithcaption.html filepath="/assets/img/workflow2.jpg" alt="Comma Separated Value file > Gephi > Image File" caption="Gephi Workflow" %}
 
 Let’s think about two things. The first question is, how does this workflow fit into the manuscript workflow?
 
@@ -41,10 +41,7 @@ First draw out the manuscript workflow (the first chart) and then try to connect
 
 Once you have done that, check it against this workflow.
 
-<h3><details>
-	<summary>Solution</summary>
-	<img src="{{ site.baseurl }}/assets/img/workflow3.jpg" class="example-img" alt="This workflow combines the first and second, with Gephi flowing into Image File, which in turn flows into the Image Editor from the first diagram.">
-</details></h3>
+{% include spoiler.html title="Gephi Workflow Solution Part 1" image="/assets/img/workflow3.jpg" alt="This workflow combines the first and second, with Gephi flowing into Image File, which in turn flows into the Image Editor from the first diagram." caption="The answer combines the first and second workflows by connecting the Image File to the Image File" %}
 
 Most of the information from Gephi is going into images, which might also need to be cleaned up (resized or made into a different file format). We could also draw a line Gephi directly to Microsoft word because it is informing our writing, but this flow chart is going to get messy quick, so for sake of simplicity I have left that out.
 
@@ -54,10 +51,7 @@ As we learned in the introduction to Microsoft Excel, it is not feasible to hand
 
 Add Microsoft Excel to your sketched workflow. It should connect to Gephi in some way, but it might also connect elsewhere in the workflow.
 
-<h3><details>
-	<summary>Example with Gephi</summary>
-	<img src="{{ site.baseurl }}/assets/img/workflow4.jpg" class="example-img" alt="In the final form of the diagram, Microsoft Excel flows into both the Comma Separated Value file and the Figure Editor.">
-</details></h3>
+{% include spoiler.html image="/assets/img/workflow4.jpg" class="example-img" alt="In the final form of the diagram, Microsoft Excel flows into both the Comma Separated Value file and the Figure Editor." caption="Excel flows into the Comma Separated Value file and the Figure Editor" %}
 
 I added Microsoft Excel because it probably is going to be used in both the creation of .csv files for Gephi and for use in making figures.
 

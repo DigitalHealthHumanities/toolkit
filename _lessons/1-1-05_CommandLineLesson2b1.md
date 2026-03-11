@@ -17,7 +17,7 @@ split: none
 
 To open the command line on Windows, you will need to open the application called Command Prompt. When you do, you’ll find yourself looking at a pretty basic interface. 
 
-<img src="{{ site.baseurl }}/assets/img/CLWin1.jpg" class="example-img" alt="This image shows the command line at C:\Users\spurcell>" />
+{% include imgwithcaption.html filepath="/assets/img/CLWin1.jpg" alt="Command Prompt Window: C:\Users\spurcell>" caption="New session of the Command Prompt Window for spurcell" %}
 
 The only way to interact with this interface is with typed commands. The command line is very simple, and it only knows how to run functions that are specifically formatted for it. So if I type in something like “go to documents” it will give me an error code: “'go' is not recognized as an internal or external command, operable program or batch file.” 
 
