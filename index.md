@@ -18,7 +18,7 @@ type: page
             <div class="card dhht-card border-dark text-center h-100">
                 <div class="card-header pt-3">
                     <a href="{{ site.baseurl }}{{ sectionloop.permalink }}">
-                        <h5 class="card-title">{{ sectionloop.title }}</h5>
+                        <h3 class="card-title">{{ sectionloop.title }}</h3>
                     </a>
                 </div>
                 <div class="card-body">
