@@ -2,7 +2,7 @@
 sitemap: false
 ---
 
-@import "custom";
+@import '{{ site.theme }}';
 
 .content {
     color: #ffffff
