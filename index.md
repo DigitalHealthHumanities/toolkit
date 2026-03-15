@@ -3,8 +3,6 @@ type: page
 ---
 {% include head.html %}
 
-{% include heading.html %}
-
 <div class="dhht-container d-flex flex-column">
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
@@ -29,5 +27,3 @@ type: page
         {% endfor %}
     </div>
 </div>
-
-{% include footer.html %}
