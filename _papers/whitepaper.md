@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: White Paper
+title: Advancing Digital Health Humanities Institute White Paper
 filepath: /assets/pdfs/IntrotoCommandLine.pdf
 permalink: /white-paper
 description: "Add description here"

@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /about
+title: About the Advancing Digital Health Humanities Institute
 ---
-# About the Advancing Digital Health Humanities Institute
+# {{ page.title }}
 
 Add some stuff!
 

@@ -1,5 +1,6 @@
 ---
 type: page
+title: Digital Health Humanities Toolkit
 ---
 {% include head.html %}
 
