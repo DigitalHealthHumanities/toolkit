@@ -28,7 +28,7 @@ collections:
 
 menu:
   - label: 'About'
-    link: 'about/'
+    link: '/about'
   - label: 'Lessons'
     sub:
       - label: 'All Lessons'
