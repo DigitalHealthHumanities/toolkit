@@ -11,7 +11,7 @@ title: Digital Health Humanities Toolkit
 <!-- Pull lessongroups and generate cards -->
     {% assign lessongroups = site.lessons | where: "layout", "lessongroup" %}
     {% for sectionloop in lessongroups %}
-        {% if sectionloop.group == "dhintro" %}
+        {% if sectionloop.group == "intro" %}
         <div class="mb-4">
             <div id="intro-course-header" class="card dhht-card border-dark text-center h-100">
                 <div class="card-header intro pt-3">
