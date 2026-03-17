@@ -14,8 +14,6 @@ plugins:
 collections:
   lessons:
     output: true
-  about:
-    output: true
   papers:
     output: true
 

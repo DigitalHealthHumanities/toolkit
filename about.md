@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 permalink: /about
 title: About the Advancing Digital Health Humanities Institute
 ---
