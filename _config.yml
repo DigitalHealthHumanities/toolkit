@@ -33,6 +33,8 @@ menu:
     sub:
       - label: 'All Lessons'
         link: 'lessons/'
+      - label: 'DH Crash Course'
+        link: 'lessons/intro'
       - label: 'Digital Basics'
         link: 'lessons/databasics'
       - label: 'Project Management'
