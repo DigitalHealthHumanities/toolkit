@@ -12,6 +12,8 @@ plugins:
   - jekyll-remote-theme
 
 collections:
+  about:
+    output: true
   lessons:
     output: true
   papers:

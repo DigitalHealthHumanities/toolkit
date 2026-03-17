@@ -5,7 +5,7 @@ title: About the Advancing Digital Health Humanities Institute
 ---
 # {{ page.title }}
 
-Add some stuff!
+Coming Soon!
 
 ## Meet Our Team
 <div>
