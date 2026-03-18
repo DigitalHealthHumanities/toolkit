@@ -44,7 +44,7 @@ menu:
   - label: 'White Paper'
     link: '/white-paper'
   - label: 'Resources'
-    link: '#'
+    link: '/resources'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
@@ -55,6 +55,21 @@ footer:
   links:
     - label: 'UCSF'
     - label: 'GitHub'
+
+# ---------------------------------------------------------------
+# SITE RESOURCES 
+# ---------------------------------------------------------------
+#
+
+resources:
+  - label: 'Jekyll'
+    link: 'https://jekyllrb.com/'
+    type: 'Web Development'
+    description: 'Liquid-based framework for static websites that you can host for free on GitHub Pages (like this very site!)'
+  - label: 'Manifold'
+    link: '#'
+    type: 'Open Educational Resource'
+    description: 'Insert description here.'
 
     
 exclude :

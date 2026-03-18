@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: /resources
+title: Resources
+---
+
+<h1>Resources</h1>
+
+{% assign types = site.resources | map: "type" %}
+{% for type in types %}
+    <h2>{{ type }}</h2>
+    {% assign resources = site.resources | where: "type", type %}
+    {% for resource in resources %}
+        <ul class="mb-3">
+            <li>
+                <a href="{{ resource.link }}">{{ resource.label }}</a> 
+                <p>{{ resource.description }}</p>
+            </li>
+        </ul>
+    {% endfor %}
+{% endfor %}
