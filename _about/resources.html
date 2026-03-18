@@ -13,8 +13,7 @@ title: Resources
     {% for resource in resources %}
         <ul class="mb-3">
             <li>
-                <a href="{{ resource.link }}">{{ resource.label }}</a> 
-                <p>{{ resource.description }}</p>
+                <p><a href="{{ resource.link }}">{{ resource.label }}</a> - {{ resource.description }}</p>
             </li>
         </ul>
     {% endfor %}
