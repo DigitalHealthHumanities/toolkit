@@ -1,13 +1,13 @@
 ---
 layout: sublesson
 structurehead: DHIntro
-title: "DH Crash Course - How Does Tech Use Data?"
+title: "Low / No Code!"
 group: intro
-abstract: "In this section you will develop an understanding of how data is used by digital technologies and programs."
+abstract: "Insert Description"
 lessonnumber: 2
 lessonprint: 2
 permalink: /lessons/intro/2
 previouslesson: /lessons/intro/1
-nextlesson: n/a
+nextlesson: /lessons/intro/3
 authors: spurcell
 ---

@@ -1,7 +1,7 @@
 ---
 layout: sublesson
 structurehead: DHIntro
-title: "DH Crash Course - Guiding Tensions and Social Constructivism"
+title: "What is DH?"
 group: intro
 abstract: "In this section you will learn the basic tensions which guide digital humanities scholarship, with a focus on social constructivism."
 lessonnumber: 1
