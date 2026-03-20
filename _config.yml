@@ -53,8 +53,8 @@ menu:
 
 footer:
   links:
-    - label: 'UCSF'
     - label: 'GitHub'
+      link: 'https://github.com/DigitalHealthHumanities/toolkit'
 
 # ---------------------------------------------------------------
 # SITE RESOURCES 
