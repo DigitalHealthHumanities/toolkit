@@ -19,7 +19,7 @@ split: none
 
 When we open the Command Prompt, we’ll start in the same place: your user folder. This is what a user folder might look like. (You can access it by clicking on your OSDisk, which is the C drive for this computer, clicking on the folder titled ‘Users’ and clicking on the folder with your username. For this example the user is ‘spurcell’.) 
 
-{% include imgwithcaption.html filepath="/assets/img/CLWin2.jpg" alt="User Folder Contents at 'This PC > OSDisc(C:) > Users > spurcell'" caption="spurcell's User Folder Contents as seen in Windows File Explorer" %}
+{% include imgwithcaption.html filepath="/assets/img/CLWin2.JPG" alt="User Folder Contents at 'This PC > OSDisc(C:) > Users > spurcell'" caption="spurcell's User Folder Contents as seen in Windows File Explorer" %}
 
 If you are lost, you can always use the GUI folder hierarchy to help you search, because they are looking at the same thing. 
 
@@ -35,7 +35,7 @@ The ‘dir’ command can help us if we are lost, or if we do not know what dire
 
 Let’s look at that output from that command. This is how it looks like on my computer: 
 
-{% include imgwithcaption.html filepath="/assets/img/CLWin3.jpg" alt="Folders in the Directory of C:\Users\spurcell, including 5 files and 33 directories" caption="33 directories in spurcell's user folder" %}
+{% include imgwithcaption.html filepath="/assets/img/CLWin3.JPG" alt="Folders in the Directory of C:\Users\spurcell, including 5 files and 33 directories" caption="33 directories in spurcell's user folder" %}
 
 I can see the folder ‘downloads’ in the directory, which means that I can move to that folder in the Command Prompt. To do this, we will need to use a different command, ‘cd’ or change directory. 
 

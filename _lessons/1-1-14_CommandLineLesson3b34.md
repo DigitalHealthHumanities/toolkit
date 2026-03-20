@@ -52,7 +52,7 @@ Now run that command:
 
 You should have in that outputs directory a new file named tuberculinfind.txt and it should look like this: 
 
-<img src="{{ site.baseurl }}/assets/img/CLWin8.jpg" class="example-img" />
+{% include imgwithcaption.html filepath="/assets/img/CLWin8.JPG" alt="File Explorer at folder path This PC > Downloads > Command Prompt > outputs. Has one file, tuberculinfile.txt, which contains a list of filenames with the total number of tuberculin mentions" caption="tuberculin prompt count file result" %}
 
 Now try to do the same with the findstr command. 
 
