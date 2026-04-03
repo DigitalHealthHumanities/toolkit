@@ -1,0 +1,6 @@
+/lessons/databasics/commandline/4:
+  - term: "Textual Analysis"
+    definition: "Textual analysis (or text analysis for short) refers to any method that examines large amounts of text using computational tools. Text analysis historically was used to count the use of specific words, and look at their context with other words. More contemporary text analysis uses large language models and machine learning to develop more complex groupings of interrelated words (topic modelling) or weight texts based on the positive or negative affect of words used (sentiment analysis)."
+
+  - term: "Data Cleaning"
+    definition: "Often we have to make the files we are using in our digital research compatible with our platforms. We have to deal with any errant mistakes or issues with those data sources. Removing the unnecessary information in data files is known as data cleaning."
