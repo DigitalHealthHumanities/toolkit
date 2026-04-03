@@ -1,10 +1,6 @@
 ---
 layout: sublesson
 structurehead: CommandLine
-definitions: {
-    {term: , definition: "Textual analysis (or text analysis for short) refers to any method that examines large amounts of text using computational tools. Text analysis historically was used to count the use of specific words, and look at their context with other words. More contemporary text analysis uses large language models and machine learning to develop more complex groupings of interrelated words (topic modelling) or weight texts based on the positive or negative affect of words used (sentiment analysis)."},
-    {term: "Data Cleaning", definition: "Often we have to make the files we are using in our digital research compatible with our platforms. We have to deal with any errant mistakes or issues with those data sources. Removing the unnecessary information in data files is known as data cleaning."}
-}
 group: databasics
 nest: windows
 title: "Synthesis"
@@ -27,7 +23,7 @@ Remember: you do not have to search each of these three terms separately. There 
 
 What can we do with this text file?? We counted terms earlier in this lesson (see sections 3b.1 and [!!!mac version]), and that helped us find specific texts that focused on specific interests in the period. But now we are generating texts, which are themselves too long to gloss. 
 
-What we can do with these files is use them for <a class="term" href="#{{ 'textual analysis' | slugify }}">textual analysis</a>. 
+What we can do with these files is use them for {% include term.html term="textual analysis" %}. 
 
 There are more lessons on text analysis elsewhere in this toolkit ([!!!!links go here]), but wec an look at the documents we generated and see that they are covering very different parts of the corpus we examined. For this lesson, we will use Voyant: an open-source text analysis platform that is very well suited for teaching. 
 
