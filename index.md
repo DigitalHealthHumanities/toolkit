@@ -3,7 +3,12 @@ layout: default
 title: Digital Health Humanities Toolkit
 ---
 <h1>{{ site.title }}</h1>
+<div class="backsplash">
+    <img src="assets/img/ADHHI/ADHHI_Draft7_Web.jpg" class="img-fluid banner-img mx-auto d-block" alt="Connected photographs of medical practitioners, researchers, and painting in front of lines of code."/>
+</div>
+
 <p>{{ site.description }}</p>
+
 <p>Read the <a href="{{ site.baseurl }}/white-paper">White Paper</a></p>
 
 {% assign sublessons = site.lessons | where: "layout", "sublesson" %}
