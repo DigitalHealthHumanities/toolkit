@@ -1,5 +1,4 @@
 ---
-permalink: /about/schou
 name: Sutina Chou
 affiliation: University of California San Francisco
 association: awardee

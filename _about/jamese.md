@@ -1,5 +1,4 @@
 ---
-permalink: /about/ejames
 name: Emma James
 affiliation: University of California San Franscico
 title: Project Archivist 

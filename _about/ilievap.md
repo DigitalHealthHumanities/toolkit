@@ -1,5 +1,4 @@
 ---
-permalink: /about/pilieva
 name: Polina Ilieva
 affiliation: University of California San Francisco
 title:  Associate University Librarian for Collections, UCSF Archivist, and an Assistant Professor at the Department of Humanities and Social Sciences

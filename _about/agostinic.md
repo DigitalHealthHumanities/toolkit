@@ -1,5 +1,4 @@
 ---
-permalink: /about/cagostini
 name: Caterina Agostini
 affiliation: Indiana University
 title: 

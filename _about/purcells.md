@@ -1,5 +1,4 @@
 ---
-permalink: /about/spurcell
 name: Sean Purcell
 affiliation: University of California San Francisco
 title: Digital Health Humanities Program Coordinator

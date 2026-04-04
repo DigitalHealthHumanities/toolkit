@@ -1,5 +1,4 @@
 ---
-permalink: /about/ecueva
 name: Edmund Cueva
 affiliation: "University of Houston-Downtown"
 association: awardee
