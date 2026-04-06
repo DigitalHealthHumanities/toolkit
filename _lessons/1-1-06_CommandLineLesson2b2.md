@@ -13,6 +13,28 @@ nextlesson: /lessons/databasics/commandline/3b1
 split: none
 ---
 
+Testing Some of the Includes (From GITHUB)
+
+**Block Quote Test**
+
+{% include blockquote.html quote="This is a test to show how block quotes work in this format" author="Jane Fakename" title="Block Quote Test" %}
+
+**Definition Test**
+
+{% include definition.html term="Discipline", definition="A Foucaldian term that refers to an operation of power in which the structures of knowledge are defined through who is able to set the parameters of measurement and definition." %}
+
+**Image with Caption Test**
+
+{% include imgwithcaption.html filepath="/assets/img/CLVoy5.JPG" alt="A closeup on the Voyant interface, mousing over the 'Define options for this tool' button." %}
+
+**Spoiler Test**
+
+{% include spoiler.html title="Check Our Answer" image="assets/img/CLVoy5.JPG" alt="A closeup on Voyant" Caption="A voyant example" answer="Voyant is cool!" %}
+
+**Term Test**
+
+{% include term.html term="Digital Health humanities" %
+
 **To do the next step, please download and unzip the [working files folder](https://ucsf.box.com/s/xlyqx9t24e2su78ww2jh52f6xc2xp4va). (For the examples, I have unzipped this folder in my downloads folder.)**
 
 **This introduction assumes that the files you have downloaded are in the downloads folder. If they aren’t be sure to put them there!**
