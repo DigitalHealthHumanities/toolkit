@@ -33,7 +33,7 @@ Testing Some of the Includes (From GITHUB)
 
 **Term Test**
 
-{% include term.html term="Digital Health humanities" %
+{% include term.html term="Digital Health humanities" %}
 
 **To do the next step, please download and unzip the [working files folder](https://ucsf.box.com/s/xlyqx9t24e2su78ww2jh52f6xc2xp4va). (For the examples, I have unzipped this folder in my downloads folder.)**
 
