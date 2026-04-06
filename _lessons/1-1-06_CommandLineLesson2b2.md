@@ -21,7 +21,7 @@ Testing Some of the Includes (From GITHUB)
 
 **Definition Test**
 
-{% include definition.html term="Discipline", definition="A Foucaldian term that refers to an operation of power in which the structures of knowledge are defined through who is able to set the parameters of measurement and definition." %}
+{% include definition.html term="Discipline" definition="A Foucaldian term that refers to an operation of power in which the structures of knowledge are defined through who is able to set the parameters of measurement and definition." %}
 
 **Image with Caption Test**
 
