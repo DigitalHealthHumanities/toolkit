@@ -29,7 +29,7 @@ Testing Some of the Includes (From GITHUB)
 
 **Spoiler Test**
 
-{% include spoiler.html title="Check Our Answer" image="assets/img/CLVoy5.JPG" alt="A closeup on Voyant" Caption="A voyant example" answer="Voyant is cool!" %}
+{% include spoiler.html title="Check Our Answer" image="/assets/img/CLVoy5.JPG" alt="A closeup on Voyant" Caption="A voyant example" answer="Voyant is cool!" %}
 
 **Term Test**
 
