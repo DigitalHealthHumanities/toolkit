@@ -20,7 +20,7 @@ title: Digital Health Humanities Toolkit
         <div class="col-md-4 mb-3">
             <div id="intro-course-header" class="card dhht-card border-dark text-center h-100">
                 <div class="card-header intro pt-3">
-                    <a href="{{ site.baseurl }}{{ sectionloop.permalink }}">
+                    <a href="{{ site.baseurl }}{{ lesson.permalink }}">
                         <h3 class="card-title">{{ lesson.title }}</h3>
                     </a>
                 </div>
