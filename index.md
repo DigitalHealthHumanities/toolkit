@@ -14,6 +14,7 @@ title: Digital Health Humanities Toolkit
 {% assign sublessons = site.lessons | where: "layout", "sublesson" %}
 {% assign introlessons = sublessons | where: "group", "intro" %}
 
+<!-- Pull Crash Course Lessons and Generate Cards -->
 <h2>Digital Humanities Crash Course</h2>
 <div class="row mt-2 mb-3">
     {% for lesson in introlessons %}
@@ -34,7 +35,7 @@ title: Digital Health Humanities Toolkit
 
 <h2>Lessons</h2>
 <div class="row mt-3 mb-3">
-<!-- Pull lessongroups and generate cards -->
+<!-- Pull non Crash Course lessongroups and generate cards -->
     {% assign lessongroups = site.lessons | where: "layout", "lessongroup" %}
     {% for sectionloop in lessongroups %}
         {% unless sectionloop.title == "Digital Humanities Crash Course" %}
