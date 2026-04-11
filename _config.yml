@@ -32,7 +32,7 @@ menu:
   - label: 'Lessons'
     sub:
       - label: 'All Lessons'
-        link: 'lessons/'
+        link: '/lessons'
       - label: 'DH Crash Course'
         link: 'lessons/intro'
       - label: 'Digital Basics'
