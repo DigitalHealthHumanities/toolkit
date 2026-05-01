@@ -1,58 +1,33 @@
 ---
 layout: sublesson
 structurehead: workflows
-title: "How Research Questions Relate to (Digital) Methods"
+title: "Workflows in the Digital Humanities"
 group: projectmanagement
-abstract: "This lesson shows a few examples showing how research questions can be tied to digital methodologies."
-lessonnumber: 1
-lessonprint: 1
+abstract: "This lesson introduces students to the problems which arise when scholars work with multiple digital and analog tools in their research."
+lessonnumber: 1.1
+lessonprint: 1.1
 permalink: /lessons/projectmanagement/digitalworkflows/1
+nextlesson: /lessons/projectmanagement/digitalworkflows/2
+split: none
 nest: nonest
 ---
 
-For this first activity, we will think about how different programs work together to produce a final research output—a journal article, a book, a digital humanities project. For this activity, we will think about the production of a network graph for a journal article.
-The first question to ask is, what is your deliverable?
+If you read the introduction to Gephi or QGIS provided in this toolkit, you might be familiar with the idea that sometimes for digital projects, you may need to use multiple tools or programs to produce your desired research outputs. We advocate for uploading information into a tool like Gephi because other programs, like Microsoft Excel, are built to be flexible, customizable, and the data you input can be transformed within the platform for other uses. In those lessons, we wanted to silently convey a secondary lesson: often, in computational research, we will need to move our data between platforms, transforming that data to fit the predefined data structures those tools use.  
 
-{% include definition.html term="Deliverable" definition="Deliverables are concrete materials which are prepared to be shared with others, based on yours and your receiver’s expectations. These can be very polished—like a published book manuscript—or something that is a work in progress—like a draft you submit to a writing group. Deliverables are most important because they give us clear goals to work toward, and help benchmark progress." %}
+While this concept of moving between platforms and formats is especially important for digital tools, it is also something that non-digital scholars still practice. Researchers have to juggle technologies and platforms to share their work, to draft their arguments, and to access and catalogue their sources.  
+ 
+Think about the processes and tools you use to draft and share your written work. 
 
-For this exercise, we are going to think about publishing this essay in a peer-reviewed, print-based journal in the history of medicine. The idea here is that we will work backwards from a very traditional research output, rather than think about something that might be more digitally specific—like a born-digital journal like the Journal of Digital History. We are using a history journal to think about primary, archival data. 
+To write a journal article or draft a chapter for an edited volume you may need to read articles (provided as .pdfs) on Adobe Acrobat, cite those sources with a citation manager like Zotero, and draft the essay on Microsoft Word. You may have also shared drafts with collaborators on Gmail or Microsoft Outlook, or printed those materials using a departmental printer, or read a primary source in a bound book.  
 
-What might the journal need from its authors for a finished publication? A manuscript, probably written on or exported to a Microsoft Word (.docx) file. If this is the case, then all of our workflow will have to, in some way, feed back into that .docx file.
+We often do not recognize how quickly and easily we slip between different technologies and media in our research, because engaging with those forms is second nature to us. We are familiar with bound monographs, with the affordances of a word processor, and the practices associated with writing an email. Because these are second nature, we ignore moments of friction when attaching a draft to an email or when quoting a passage from a physical book, which, when we did it the first time, might have been more complicated or unintuitive. 
 
-Before we even get to the network analysis elements, what other programs might we use for the written materials? We need a text editor--Microsoft Word or Google Docs or Open Office or Scrivener. We probably have images, which might need small edits so we should consider an image editor—Adobe Photoshop or GIMP. We also should use a citation manager—Zotero or OneNote. And we may need to generate tables and other figures which may need its own program—Tableau, Airtable, or Microsoft Excel. For just the written components we may have a workflow that looks like this.
+The practices described above are a form of a project {% include term.html term="workflow" %}, or the transformation of information from one media format, data structure, or digital tool to another. 
 
-<img src="{{ site.baseurl }}/assets/img/workflow1.jpg" class="example-img" alt="Microsoft Word and Supplemental Exports flow into the Final Manuscript. Citation Manager, Figure Editor, and Image Editor flow into Microsoft Word while Figure Editor and Image Editor flow into Supplemental Exports.">
+{% include definition.html term="Workflow" definition="A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument." %} 
 
-You may notice that some of these programs need to be used outside of Microsoft Word for the submission. Often journals require unique files as part of their submissions if you have images or tables. This workflow is relatively, at least when broken down into the most simple elements, assuming you are not processing data, generating findings with programs or digital platforms.
+While the examples we provided above do not require much mental load, as scholars begin to adopt new digital tools into their projects, it can become complicated and time consuming. This is because many tools require unique forms of data, unique file types, or are incongruous with the information we have already prepared in our research. 
 
-Let’s think about Gephi. There is an introduction to Gephi in this toolkit.
+This lesson will help you learn how to develop and test a data workflow for your project through the process of {% include term.html term="prototyping" %}. In this lesson you will learn how to conceptualize your scholarly evidence as it passes through different digital tools and platforms. It will teach you how to sketch out those transformations. And it will teach you how to think about the different tools you might want to incorporate in your research.  
 
-Usually it is better to use Gephi as the network generator, but the data entry software. We will assume that the workflow uses a pair of comma separated value (.csv) files and is exporting an image of the graph. There will also be some data that we’ll input into the Microsoft Word manuscript, but that that information will be made from analyzing the final graph.
-
-The workflow would look something like this
-
-{% include imgwithcaption.html filepath="/assets/img/workflow2.jpg" alt="Comma Separated Value file > Gephi > Image File" caption="Gephi Workflow" %}
-
-Let’s think about two things. The first question is, how does this workflow fit into the manuscript workflow?
-
-For the rest of this activity, we will follow a sketch and reflection style of learning. I will prompt you to sketch out, on a scrap piece of paper, in a digital program (the images for this workshop were made by taking screenshots from Microsoft Whiteboard).
-
-First draw out the manuscript workflow (the first chart) and then try to connect, using arrows how this simple Gephi workflow might fit into it.
-
-Once you have done that, check it against this workflow.
-
-{% include spoiler.html title="Gephi Workflow Solution Part 1" image="/assets/img/workflow3.jpg" alt="This workflow combines the first and second, with Gephi flowing into Image File, which in turn flows into the Image Editor from the first diagram." caption="The answer combines the first and second workflows by connecting the Image File to the Image File" %}
-
-Most of the information from Gephi is going into images, which might also need to be cleaned up (resized or made into a different file format). We could also draw a line Gephi directly to Microsoft word because it is informing our writing, but this flow chart is going to get messy quick, so for sake of simplicity I have left that out.
-
-Let’s work backwards again. How are we going to make that comma separated value (.csv) file?
-
-As we learned in the introduction to Microsoft Excel, it is not feasible to handwrite .csv files. Instead we’ll need a spreadsheet software, like Microsoft Excel, from which we’ll export. We also will need to be working with some sort of data, which we will get to next.
-
-Add Microsoft Excel to your sketched workflow. It should connect to Gephi in some way, but it might also connect elsewhere in the workflow.
-
-{% include spoiler.html image="/assets/img/workflow4.jpg" class="example-img" alt="In the final form of the diagram, Microsoft Excel flows into both the Comma Separated Value file and the Figure Editor." caption="Excel flows into the Comma Separated Value file and the Figure Editor" %}
-
-I added Microsoft Excel because it probably is going to be used in both the creation of .csv files for Gephi and for use in making figures.
-
-The next question is the really sticky one: where are we getting our primary data? How are we processing our data? How are we getting it into the right form for Gephi to read it?
+{% include definition.html term="Prototyping" definition="Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals." %} 

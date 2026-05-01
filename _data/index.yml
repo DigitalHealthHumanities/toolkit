@@ -1,0 +1,14 @@
+index:
+  - term: "Affordance"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."
+
+  - term: "Deliverable"
+    definition: "Deliverables are concrete research or methodological outputs which are prepared to be shared with others, based on yours and your receiver’s expectations. These can be very polished—like a published book manuscript—or something that is a work in progress—like a draft you submit to a writing group. Deliverables are most important because they give us clear goals to work toward, and they help benchmark progress"
+
+  - term: "Prototyping"
+    definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
+    location: [ "/lessons/projectmanagement/digitalworkflows/1-1", ]
+
+  - term: "Workflow"
+    definition: A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+    location: [ "/lessons/projectmanagement/digitalworkflows/1-1", ]

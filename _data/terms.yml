@@ -1,3 +1,27 @@
+/lessons/projectmanagement/digitalworkflows/1:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+    
+  - term: "Prototyping"
+    definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
+
+/lessons/projectmanagement/digitalworkflows/2:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+    
+  - term: "Deliverable"
+    definition: "Deliverables are concrete research or methodological outputs which are prepared to be shared with others, based on yours and your receiver’s expectations. These can be very polished—like a published book manuscript—or something that is a work in progress—like a draft you submit to a writing group. Deliverables are most important because they give us clear goals to work toward, and they help benchmark progress"
+
+  - term: "Affordance"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."  
+
+/lessons/projectmanagement/digitalworkflows/2:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+    
+  - term: "Affordance"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."    
+    
 /lessons/databasics/commandline/4:
   - term: "Textual Analysis"
     definition: "Textual analysis (or text analysis for short) refers to any method that examines large amounts of text using computational tools. Text analysis historically was used to count the use of specific words, and look at their context with other words. More contemporary text analysis uses large language models and machine learning to develop more complex groupings of interrelated words (topic modelling) or weight texts based on the positive or negative affect of words used (sentiment analysis)."
