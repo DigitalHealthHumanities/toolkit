@@ -9,6 +9,10 @@ index:
     definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
     location: [ "/lessons/projectmanagement/digitalworkflows/1-1", ]
 
+  - term: "Text"
+    definition: ’Text’ refers to a broad category of cultural artifacts and practices that can be analyzed to understand social, political, historical, or ideological practices. This approach expands the definition beyond a singularly written text, because it allows humanists to carefully examine a broader range of human expressions, experiences, and practices, enabling humanists to analyze visual media, ephemeral activities, and material cultures.""
+    location: [ "/lessons/projectmanagement/digitalworkflows/5", ]
+
   - term: "Workflow"
     definition: A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
     location: [ "/lessons/projectmanagement/digitalworkflows/1-1", ]
