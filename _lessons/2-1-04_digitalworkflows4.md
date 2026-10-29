@@ -3,7 +3,7 @@ layout: sublesson
 structurehead: workflows
 lessontitle: "Digital Workflows"
 title: "Activity: Incorporating Digital Tools to Research Workflows"
-group: projectmanagement
+group: ProjectManagement
 abstract: "In this lesson, students will begin to think about the ways digital programs can link together to produce research using the network mapping program Gephi as an example."
 lessonnumber: 4
 lessonprint: 4
