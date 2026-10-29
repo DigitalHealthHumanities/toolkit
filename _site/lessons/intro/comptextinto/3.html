@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keyword-in-Context with AntConc</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1></h1>
+
+<h2>Lesson 3: Keyword-in-Context with AntConc</h2>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <p>AntConc is a corpus analysis toolkit to examine words, texts, and corpora. It is a free corpus analysis tool used for studying text collections. For linguistic research and text analysis, it helps users gain insights into language use and structure. AntConc analyzes and visualizes text data through various functions, including word frequency counts, keyword extraction, concordance, and collocation analysis.</p>
+
+<h2 id="download">Download</h2>
+
+<p><a href="https://www.laurenceanthony.net/software/antconc/">Antconc</a> from the <a href="https://www.laurenceanthony.net/">AntLab Website</a>.</p>
+
+<p><strong>Unzip the download, if necessary. Next, launch the application.</strong></p>
+<blockquote>
+  <p><a href="https://www.laurenceanthony.net/software/antconc/releases/AntConc324/">Updated releases</a> are published on a regular basis by AntConc’s creator, <a href="http://www.laurenceanthony.net/">Laurence Anthony</a>. 
+<a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/7b6b9cc5-d502-45c7-bc5d-561183134672/931a28b4-9fa4-4fda-9236-cd21771a0289/Anthony_Tutorial.pdf">Laurence Anthony’s guide to help users understand how to use AntConc.</a></p>
+</blockquote>
+
+<h2 id="datasets">Datasets</h2>
+<p>We can add files in the format of plain text (.txt), Word (.docx), and PDF (.pdf) files.</p>
+<ul>
+  <li>No More Silence, https://ucsf.app.box.com/s/ifdndlmnje0xme8jdg3i697s51zznect</li>
+  <li>Industry Documents Library, https://ucsf.app.box.com/v/IDL-DataSets/folder/78644252849</li>
+</ul>
+
+<h2 id="corpus-analysis">Corpus Analysis</h2>
+<p><a class="term" href="#corpus">Corpus</a>
+ analysis is a form of text analysis which allows you to make comparisons between textual objects at a large scale. <a class="term" href="#distant-reading">Distant reading</a>
+ enables us to notice things that we might overlook when reading. If you have a collection of documents, you might want to find frequently recurring phrases in your corpus; statistically likely/unlikely phrases for a particular author or genre of text; grammatical structures; also, examples of a particular term or idea across many documents, and much more. Corpus analysis is valuable for testing hypotheses about texts and for cross-checking results from other digital methods.</p>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Distant Reading</p>
+        <p>Distant reading is a mode of reading that is antithetical to 'close reading'. Rather than looking at one text with extreme scrutiny, distant reading looks for patterns and trends across a large collection of texts, making arguments based on these 'distant' observations.</p>
+    </div>
+</div>
+
+<p>This tutorial provides an overview of methods rather than a rigid step-by-step formula, and following the exact order is not always necessary. Corpus linguistic methods are customizable, so remember we need to think about how each step helps answer specific research questions.</p>
+
+<p>This lesson will focus on the desktop tool AntConc. A similar webtool, <a href="http://voyant-tools.org/">Voyant Tools</a>, offers similar options for exploring text analysis methods. </p>
+
+<h2 id="the-antconc-user-interface">The AntConc User Interface</h2>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Comptextintro1" class="img-fluid" alt="The top bar interface in AntConc. The tabs read, in order, 'KWIC', 'Plot', 'File View', 'Cluster', 'N-Gram', 'Collocate', 'Word', 'Keyword', 'Wordcloud', and 'ChatAI'." />
+    <p class="caption">Each of these tabs has its own function that can be used to do different forms of computational textual analysis.</p>
+</div>
+
+<p>When AntConc opens, it shows an interface with the following tabs: </p>
+
+<ul>
+  <li>KWIC: <a class="term" href="#keyword-in-context">Keyword in Context</a>
+, which is a concordance view.</li>
+  <li>Plot: A visualization of your KWIC search along a bar, showing the position and frequency of words within the text.</li>
+  <li>File View: Showing the broader context of a finding.</li>
+  <li>Cluster: Words frequently found in the same context(s).</li>
+  <li>
+    <dl>
+      <dt><a class="term" href="#n-gram">N-gram</a></dt>
+      <dd>Given that n is a number you decide, this feature shows commons terms.</dd>
+    </dl>
+  </li>
+  <li>Collocate: Given a certain distance (number of words away from a specific word), words statistically likely to be found in the same context(s).</li>
+  <li>Word: A list of all the words in the corpus.</li>
+  <li>Keyword: Comparing most frequent, significant words across two corpora.</li>
+  <li>Wordcloud: A visual representation of textual data in which the size of each word reflects its frequency or significance.</li>
+  <li>ChatAI: This feature seems to be still in progress. There is a disclaimer, “Remember that OpenAI API calls will be charged to your account. Use the ChatAI tool with caution.”</li>
+</ul>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Distant Reading</p>
+        <p>Keyword in context analysis provides a list of a specific word or phrase in context (up to five words in each direction is common). This approach is best for pattern identification and close reading.</p>
+    </div>
+</div>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">N-Gram</p>
+        <p>N-grams observe clusters of terms which appear together in each dataset. This is very good for identifying common phrases in a particular genre, but also stylistic features which are unique to a specific author.</p>
+    </div>
+</div>
+
+<p>Start with File, then Open File as Quick Corpus or Open Corpus Manager.</p>
+
+<p>Add more than one file or a folder. Click Create so you can have a corpus loaded. Click Create. You will have a confirmation message, “Your corpus has been created.”</p>
+
+<p>This is your target corpus. You can always check what has been uploaded (and is being analysed) on the left,  in the window to see all corpus files–that would be your target corpus.</p>
+
+<p>Important: For all search tabs, except the Word tab (marked with an asterisk in this list), you need to type a word or more, then click Start.</p>
+
+<h2 id="search-operators-for-keyword-in-context-kwic">Search operators for <strong>Keyword-in-Context (KWIC)</strong></h2>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Keyword-in-Context</p>
+        <p>Keyword-in-Context (KWIC) Analysis provides a list of a specific word or phrase in context (up to five words in each direction is common). This approach is best for pattern identification and close reading.</p>
+    </div>
+</div>
+
+<p>The * operator (for zero or more characters) can help find variations of the same word. For example, the singular and plural forms of nouns, or words with similar spellings but different meanings, but also irregular verbs in various tenses.</p>
+
+<p>polic* would track police, policy, policies, etc.</p>
+
+<p>s*t retrieves sit, sat</p>
+
+<p>sit* finds sit, sits, sitting, etc.</p>
+
+<p>The ? operator for d??r finds dear, deer, door, etc.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The</td>
+      <td>Operator (“or”)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The</td>
+      <td>Operator (“or”) can search alternative words, for example yes</td>
+      <td>no.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>##Saving Outputs</p>
+
+<p>While running AntConc, you can generate output files for reference. It is good practice to use descriptive filenames (for example, “med_hum_20241106.text”).</p>
+
+    </div>
+    <div class="col-md-4">
+        <div class="mx-auto card">
+    <div class="card-body dhht-definition">
+        <h3>Key Terms</h3>
+        
+        <hr />
+        <p class="term" id="corpus">Corpus</p>
+        <p>A corpus is a collection of written materials that have been made machine readable, and which can be analyzed in bulk using different computational text analysis methods.</p>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+Lesson by: 
+
+
+
+
+
+
+
+
+
+Caterina Agostini, Indiana University<br>
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/intro/comptextinto/2" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/intro" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/intro/comptextinto/4" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

@@ -1,0 +1,1102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Humanities Crash Course</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Digital Humanities Crash Course</h1>
+
+<p></p>
+
+<div class="accordion dhht-accordion" id="accordion-Digital Humanities Crash Course">
+  
+  
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="lessongroup-DHIntro">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedAccordion-DHIntro"
+          aria-expanded="false" aria-controls="nestedAccordion-DHIntro" aria-label="accordion-Digital Humanities Crash Course">
+          What are the Digital Humanities?
+        </button>
+      </h2>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion dhht-accordion accordion-collapse collapse" id="nestedAccordion-DHIntro">
+    
+    <ul>
+       <li><a href="/toolkit/lessons/intro/whatisDH/1">1. What are the Digital Humanities?</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/whatisDH/2">2. What Are the Digital Humanities</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/whatisDH/3">3. Interests, Tensions and Approaches in the Digital Humanities</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/whatisDH/4">4. Critical Digital Humanities</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/whatisDH/5">5. The Digital Health Humanities</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/whatisDH/6">6. Next Steps</a></li>
+    </ul>
+</div>
+
+    </div>
+  
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="lessongroup-LowCode">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedAccordion-LowCode"
+          aria-expanded="false" aria-controls="nestedAccordion-LowCode" aria-label="accordion-Digital Humanities Crash Course">
+          Low Code Approaches to Digital Humanities Research Methods
+        </button>
+      </h2>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion dhht-accordion accordion-collapse collapse" id="nestedAccordion-LowCode">
+    
+    <ul>
+       <li><a href="/toolkit/lessons/intro/LowCode/1">1. Understanding Digital Research: A Hands-On Lesson</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/LowCode/2">2. Back to Basics: The Research Process</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/LowCode/3">3. Back to Basics: Primary Source Data</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/LowCode/4">4. Back to Basics: Developing Research Questions</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/LowCode/5">5. Hands On Activity: Analog Mapping</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/LowCode/6">6. Low Code Approaches: Digital Mapping</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/LowCode/7">7. Low Code Approaches: New Research Questions</a></li>
+    </ul>
+</div>
+
+    </div>
+  
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="lessongroup-DHMethods">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedAccordion-DHMethods"
+          aria-expanded="false" aria-controls="nestedAccordion-DHMethods" aria-label="accordion-Digital Humanities Crash Course">
+          Applying Digital Methods to Your Research
+        </button>
+      </h2>
+    </div>
+    <div class="accordion-body">
+      <div class="accordion dhht-accordion accordion-collapse collapse" id="nestedAccordion-DHMethods">
+    
+    <ul>
+       <li><a href="/toolkit/lessons/intro/DHMethods/1">1. Applying Digital Methods to Your Research</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/DHMethods/2">2. Activity: Your Research Questions and Research Objects</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/DHMethods/3">3. Objects as Data</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/DHMethods/4">4. Activity: Digital Methods and Your Research Questions</a></li>
+    
+       <li><a href="/toolkit/lessons/intro/DHMethods/5">5. Conclusion: The Benefits of Digital Research</a></li>
+    </ul>
+</div>
+
+    </div>
+  
+</div>
+
+<!-- 
+
+<p style="margin-left: 80px"><Lesson : <a href=""></a><br></p>
+
+
+
+
+
+
+
+
+<b><a href="/toolkit/lessons/intro/WhatisDH">What are the Digital Humanities?</a></b><br>
+This introduction outlines the arguments and ideas which guide conversations in the digital humanities. It also defines, more broadly, what the 'Digital Health Humanities' are.<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1: What are the Digital Humanities?
+
+
+
+
+
+
+
+
+  2: What Are the Digital Humanities
+
+
+
+
+
+
+
+
+  3: Interests, Tensions and Approaches in the Digital Humanities
+
+
+
+
+
+
+
+
+  4: Critical Digital Humanities
+
+
+
+
+
+
+
+
+  5: The Digital Health Humanities
+
+
+
+
+
+
+
+
+  6: Next Steps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<b><a href="/toolkit/lessons/intro/WhatisDH">Low Code Approaches to Digital Humanities Research Methods</a></b><br>
+This hands-on lesson will teach learners about the basic principles that guide humanistic research. Using a low code approach, where learners need no technical skill to learn, this lesson will teach the basic ideas that form the use of digital methodologies in humanistic research.<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1: Understanding Digital Research: A Hands-On Lesson
+
+
+
+
+
+
+
+
+  2: Back to Basics: The Research Process
+
+
+
+
+
+
+
+
+  3: Back to Basics: Primary Source Data
+
+
+
+
+
+
+
+
+  4: Back to Basics: Developing Research Questions
+
+
+
+
+
+
+
+
+  5: Hands On Activity: Analog Mapping
+
+
+
+
+
+
+
+
+  6: Low Code Approaches: Digital Mapping
+
+
+
+
+
+
+
+
+  7: Low Code Approaches: New Research Questions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<b><a href="/toolkit/lessons/intro/DHMethods">Applying Digital Methods to Your Research</a></b><br>
+Building on the previous two lessons in the Digital Humanities Crash Course, this lesson will teach learners about a variety of different digital methods, encouraging to think about the best methods that can be used to answer their research questions.<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1: Applying Digital Methods to Your Research
+
+
+
+
+
+
+
+
+  2: Activity: Your Research Questions and Research Objects
+
+
+
+
+
+
+
+
+  3: Objects as Data
+
+
+
+
+
+
+
+
+  4: Activity: Digital Methods and Your Research Questions
+
+
+
+
+
+
+
+
+  5: Conclusion: The Benefits of Digital Research
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

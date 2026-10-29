@@ -1,0 +1,6 @@
+<div class="accordion dhht-accordion accordion-collapse collapse" id="nestedAccordion-{{ include.lesson.structurehead }}">
+    {% assign sublessons = site.lessons | where: "layout", "sublesson" | where: "structurehead", include.lesson.structurehead %}
+    <ul>{% for sublesson in sublessons %}
+       <li><a href="{{ site.baseurl }}{{ sublesson.permalink }}">{{ sublesson.lessonprint}}. {{ sublesson.title }}</a></li>
+    {% endfor %}</ul>
+</div>

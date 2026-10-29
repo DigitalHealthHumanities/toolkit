@@ -1,0 +1,84 @@
+title: Digital Health Humanities Toolkit
+description: "The Digital Health Humanities Toolkit is a website containing the lesson plans developed for the Advancing Digital Health Humanities Institute (ADHHI). <br><br>This site is a repository of lessons developed during the ADHHI's two-year program. They are designed to onboard learners to the basics of digital humanities research, from the use of specific tools and workflows, to the problems and ethical considerations that guide digital health research.<br><br>The ADHHI was a National Endowment for the Humanities (NEH)-funded research incubator that supported computational research into the human experiences of health and illness. It ran from April 2024 to June 2026."
+affiliation:
+remote_theme: DigitalHealthHumanities/toolkittheme
+sass:
+  style: compressed
+
+url: https://digitalhealthhumanities.github.io
+baseurl: /toolkit
+
+plugins:
+  - jekyll-remote-theme
+
+collections:
+  about:
+    output: true
+  lessons:
+    output: true
+  papers:
+    output: true
+
+# --------------------------------------------------------------
+# SITE MENU SETTINGS
+# --------------------------------------------------------------
+# Each menu item needs a `label` (whats shown), and a `link`
+# (where it goes). An item can optionally have a dropdown
+# submenu via `sub`.
+
+menu:
+  - label: 'About'
+    link: '/about'
+  - label: 'Lessons'
+    sub:
+      - label: 'All Lessons'
+        link: '/lessons'
+      - label: 'DH Crash Course'
+        link: 'lessons/intro'
+      - label: 'Digital Basics'
+        link: 'lessons/databasics'
+      - label: 'Project Management'
+        link: 'lessons/ProjectManagement'
+      - label: 'Data Ethics'
+        link: 'lessons/dataethics'
+  - label: 'White Paper'
+    link: '/white-paper'
+  - label: 'Resources'
+    link: '/resources'
+
+# --------------------------------------------------------------
+# SITE FOOTER SETTINGS
+# --------------------------------------------------------------
+#
+
+footer:
+  links:
+    - label: 'GitHub'
+      link: 'https://github.com/DigitalHealthHumanities/toolkit'
+
+# ---------------------------------------------------------------
+# SITE RESOURCES 
+# ---------------------------------------------------------------
+#
+
+resources:
+  - label: 'Jekyll'
+    link: 'https://jekyllrb.com/'
+    type: 'Web Development'
+    description: 'Liquid-based framework for static websites that you can host for free on GitHub Pages (like this very site!)'
+  - label: 'Manifold'
+    link: '#'
+    type: 'Open Educational Resource'
+    description: 'Insert description here.'
+
+    
+exclude :
+    - Gemfile
+    - Gemfile.lock
+    - CNAME
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - vendor/bundle
+    - vendor/cache
+    - vendor/ruby

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Why Tabular Data Matters</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Export Formats</h1>
+
+<h2>Lesson 17: Why Tabular Data Matters</h2>
+
+
+<p>So much of the data that makes computational systems work is in tabular form. From the metadata that makes databases run, to the data that makes our mapping programs work, to the metrics that guide our social media, all of this can be expressed in tabular form.</p>
+
+<p>Tables have some limitations. They are Cartesian by design—everything can be mapped into an X and Y coordinate—and so they do not do well if they need to express more than those two dimensions. They also do very well at disciplining information—to borrow Michel Foucault’s famous framework around knowledge and prisons—because they assume all of the data can fit within the predefined metrics that correspond with the table’s construction.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Moreover, they codify assumed pregivens—like gender or race—which are much slipperier in definition than data is usually able to represent.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>These limitations cause friction when doing humanistic analysis: after all, as humanists, we tend to want to keep things messy and connected, embedded and subjective. Using a tool like Excel or any other digital spreadsheet software limits the stretchiness and malleability of our analyses, because they epistemically limit what is possible within analysis.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup></p>
+
+<p>These problems are all over the digital humanities terrain, and cannot be answered in this lesson. We bring these up to stress a conceptual problem which digital humanists are working to address: digital tools offer an ability to process information at scales and within approaches that are very different than traditional humanist scholarship, but they are limited to the epistemic pregivens which are encoded into the very processes of doing digital work. These limitations are always at odds with the vibrant, varied possibilities enabled by these tools. Excel, lets us process large swaths of information, but only if we can get that information into the shape we need and if we can work with the protocols already developed for that program.</p>
+
+<p>&lt;div class=”backsplash”&gt;Learning Excel helps us learn some of the fundamental preconditions for digital scholarship: Excel requires us to structure our data in such a manner that the computer will always look in the right place when we start to automate outputs. We ended with VLOOKUP because it is both powerful and finicky, and the kind of arbitrary ways that it functions is emblematic of the rigid ways programming languages operate. <strong>Computers need very specific rules to function, and they break when given unexpected inputs or outputs.</strong>&lt;/div&gt;</p>
+
+<p>The rigidity of Excel and other programs is at odds with the fluidity and porosity of humanistic methods, but it can still be useful at different scales and for different projects. It sets up some epistemic problems, but it can still help do research at different scales and with different outputs.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Michel Foucault, <em>Discipline and Punish: The Birth of the Prison</em> (Vintage Books, 1995). <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Johanna Drucker, “Humanities Approaches to Graphical Display,” Digital Humanities Quarterly 5, no. 1 (2011). <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Miriam Posner, “The Radical Potential of the Digital Humanities: The Most Challenging Computing Problem Is the Interrogation of Power,” <em>LSE Impact Blog</em>, July 2015, <a href="https://blogs.lse.ac.uk/impactofsocialsciences/2015/08/12/the-radical-unrealized-potential-of-digital-humanities/">link</a>. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/16" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

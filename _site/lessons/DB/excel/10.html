@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cross Referencing Data: The UNIQUE Function</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Introduction to Tabular Data and Microsoft Excel</h1>
+
+<h2>Lesson 10: Cross Referencing Data: The UNIQUE Function</h2>
+
+
+<div class="backsplash">For this exercise, you will need to download the Excel Learning Workbook.<br /><br /> For this and the following exercises, we will be using the ReferenceWorksheet1 sheet.</div>
+
+<p>For this exercise we will learn how to use functions to analyze and process data from within our spreadsheet.</p>
+
+<p>What do you see when you look at the ReferenceWorksheet1?</p>
+
+<p>This spreadsheet is a collection of over 400 entries related to images in a small collection of books. This is part of a larger dataset developed by Sean Purcell as part of his <a href="https://tuberculosisspecimen.github.io/diss/dissertation/X_1_1">dissertation research</a>. You should notice a few things about this material: first it is similar to the citation information from the previous sheet, but it does not have any of its original formulas. (They were lost when copied from another spreadsheet program, Airtable.)</p>
+
+<p>What we will do in this exercise is process a few specific data points from this larger collection, by cross referencing different cells.</p>
+
+<p>We’ll first need a blank sheet to work on. So on the bottom of the Excel interface, click on the + symbol next to the sheets.</p>
+
+<p>We will not need to rename this new sheet for this exercise, but if you’d like to, you can right click the Sheet1 that you just made and click “Rename”.</p>
+
+<p>What we are going to do in this exercise is generate a list of the different image types in the dataset and then count how many times those image types show up in the entire sheet.</p>
+
+<p>To do this, we will need to learn a few more functions and learn how to cross-reference sheets. In same way we can use a [Letter][Number] demarcation to describe a unique cell in a spreadsheet, we reference other sheets using similarly structured command. To do this, we add a prefix to our cell identifier, with the name of the sheet and an exclamation point (!).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[SheetName]![Letter][Number]
+</code></pre></div></div>
+
+<p>It is important to know that if your sheet has spaces in it, you will need to <a class="term" href="#escape">escape</a>
+ the sheet name.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>“[Sheet name with spaces]”![Letter][Number]
+</code></pre></div></div>
+
+<p>For this exercise, we are going to learn the UNIQUE function. UNIQUE looks at an array of cells lists every unique string that appears in that cell array. We want to get all of the unique variables in the C column in ReferenceWorksheet1.</p>
+
+<p>Type out in cell A1 of your newly made sheet this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=unique(ReferenceWorksheet1!C:C)
+</code></pre></div></div>
+
+<p>We are doing a few new concepts joined together, so let’s break down the command some.</p>
+
+<p>First, we are referencing our other sheet using the “[SheetName]!” prefix. We are also referencing a whole column by not adding numbers to our cell identifiers. “C:C” basically means that you want the function to check every cell in the C column. If we wanted to reference multiple columns, we can create an array like “C:D” or “C:G”.</p>
+
+<p>&lt;div class=”backsplash”&gt;<strong>A Helpful Organizational Note:</strong> This formulation also means that we have to be careful about how we arrange our columns when we are building a dataset. If, at one point, I need to access all of the information in only two columns for a specific function and they are not next to each other (columns C and F for example), I will have to reform that data (either in a separate sheet or by rearranging the sheet in which I am working) to make the function work.<br /><br />We will see this in action when we learn the VLOOKUP function later in this module.&lt;/div&gt;</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel22.jpg" class="img-fluid" alt="A screenshot from Excel. '=UNIQUE(ReferenceWorksheet1!C:C)' is in the cell entry area, and column A has six entries 'Image Type', 'X-Ray', 'Illustration', 'Photograph', 'Graphic', and '0'." />
+    <p class="caption">The UNIQUE function will find every unique entry for every cell in the targeted array. This can include your headings as well.</p>
+</div>
+
+<p>You’ll notice that unique generates an output in multiple cells. When using this function it is important to make sure you have enough open cells into which the formula will generate.  is the output:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Image Type</td>
+    </tr>
+    <tr>
+      <td>X-Ray</td>
+    </tr>
+    <tr>
+      <td>Illustration</td>
+    </tr>
+    <tr>
+      <td>Photograph</td>
+    </tr>
+    <tr>
+      <td>Graphic</td>
+    </tr>
+    <tr>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The output has a couple outliers, which you may not have been expecting. First is the “Image Type” which is the heading for the column in the spreadsheet, and finally there is a 0 which is referencing every cell in the column that has no entry. We can fix this by being a bit more specific in how we reference our cells. Rewrite the formula:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=unique(ReferenceWorksheet1!C2:C418)
+</code></pre></div></div>
+
+<p>And you’ll get this output:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>X-Ray</td>
+    </tr>
+    <tr>
+      <td>Illustration</td>
+    </tr>
+    <tr>
+      <td>Photograph</td>
+    </tr>
+    <tr>
+      <td>Graphic</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&lt;div class=”backsplash”&gt;Before we move to the next section, there is one finicky problem with the UNIQUE function we want to flag: UNIQUE is very good at looking at a single column of data, but when it references multiple columns, it will look for unique rows and not cells.&lt;/div&gt;</p>
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/9" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/DB/excel/11" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Breaking Apart Formatted Data in a Column</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Introduction to Tabular Data and Microsoft Excel</h1>
+
+<h2>Lesson 12: Breaking Apart Formatted Data in a Column</h2>
+
+
+<div class="backsplash">For this exercise, you will need to download the Excel Learning Workbook.<br /><br /> For this and the following exercises, we will be using the ReferenceWorksheet1 sheet.</div>
+
+<p>Let’s do one more count of all the different image genres in the dataset, on the ReferenceWorkseet1 sheet. These are found in column J.</p>
+
+<p>What you will notice is that there are multiple <a class="term" href="#string">string</a>
+ that have been attached together using a comma as a separator. If we were to create a list of unique entries from this data, we will need to do something to the data in the column, because the COUNTIF function only looks at the whole string, and not elements within the string.</p>
+
+<p>We can break that apart by using the “Text to Columns” function in the Data tab at the top of the screen. Navigate to Data, Data Tools, Text to Columns while selecting the J column in ReferenceWorksheet1.</p>
+
+<p>When you open the Text to Columns pane, you’ll get this interface. You’ll want to select “delimited”—which refers to a specific character or set of characters that will separate into columns. The “Fixed width” option works if you have very structured forms of data (like four letter acronyms for every entry), but this is less common for text-based datasets.</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel12.jpg" class="img-fluid" alt="A screenshot of the ‘Convert Text to Column Wizard’ interface. It is the first of three steps. The ‘Delimited’ option is selected." />
+    <p class="caption">You want to select the ‘Delimited’ option for this exercise. You will also see a preview of your data, which will change as you select different options in the ‘Convert Text to Column Wizard’.</p>
+</div>
+
+<p>Press the ‘next; button, and in the next pane, select comma as the only delimiter. You’ll notice when you do that the preview will show lines where new columns will be made from the data.</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel13.jpg" class="img-fluid" alt=" A screenshot of the ‘Convert Text to Column Wizard’ interface. It is the second of three steps. Of the options--’Tab’, ’Semicolon’, ‘Comma’, ‘Space’, and ‘Other’--only the ‘Comma’ selection is marked." />
+    <p class="caption">We are selecting the ‘Comma’ option because our data is broken apart using a comma. Other data formats, like Tab Separated Value formats (.tsv), will use structured delimiters in such a way as to make it easier to break apart into its component structure. <br /><br />Sometimes, you can use the ‘Delimited’ function to break apart unstructured textual data that has repeated structures in the document, like if every case in a journal article has the letter combination ‘Case No.’ in front of each unique case cited in the article.</p>
+</div>
+
+<p>Press “Next”, and in the next pane press “Finish”, and what you’ll get is a new set of multiple columns with each option separated into a unique cell. There are some other options, like what kind of data format you want the column to output, as well as the destination target for the cell.</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel13.jpg" class="img-fluid" alt=" A screenshot of the ‘Convert Text to Column Wizard’ interface. It is the third of three steps. ‘The Column Data Format’ interface has the ‘General’ option selected, and the ‘Destination’ is written as $J$1." />
+    <p class="caption">This interface can help change some of the preset outputs to match Microsoft Excel’s cell formats.</p>
+</div>
+
+<p>There are at most 6 separate genres defined in a single item in the dataset, so we’ll want to generate a new unique function that corresponds to the first column of the collected materials.</p>
+
+<p>Once this is split, try making a UNIQUE function for each term in the column J* and then a COUNTIF function for each cell in columns J, K, L, M, N, and O.</p>
+
+<p>&lt;div class”backsplash”&gt;<strong>* A Note:</strong> We are asking for ONLY column J, because the UNIQUE function copies whole rows (and not individual cells) when it references multiple columns!&lt;/div&gt;</p>
+
+<div class="accordion mb-2" id="spoiler-">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer-" aria-expanded="true" aria-controls="collapseOne">
+                Spoiler! Check Your Work
+            </button>
+        </h2>
+        <div id="answer-" class="accordion-collapse collapse" aria-labelledby="spoiler-" data-bs-parent="#spoiler-">
+            <div class="accordion-body">
+                
+                    <img src="/toolkit/assets/img/Excel23.jpg" class="example-img" alt=" A screenshot from Excel. “=UNIQUE(ReferenceWorksheet1!J$2:0$418,E1)” is in the cell entry area, and column A and B have categories and the counts of those categories in the referenced worksheet: “X-Ray” has “65” counts, “Illustration” has “105” counts, “Photograph” has “233” counts, and “Graphic” has “14” counts. Column C and D also have counts of categories from the referenced sheet: “Article” has “94” counts, “Monograph” has “304” counts, and “Pamphlet” has “19” counts. Columns E and F also have counts of categories from the reference sheet. “Pathological” has “155” counts, “Equipment” has “43” counts, “Instructive” has “29” counts, “Portrait” has “12” counts, “Organ” has 73” counts, “Anatomical” has “11” counts, Diagnostic” has “2” counts, “Other” has “20” counts, “Architectural” has “118” counts, “Group” has “37” counts, “Child” has “13” counts, and “Treatment” has “10” counts." />
+                    <p class="caption"></p>
+                
+                
+                    <p> Here is the solution for the UNIQUE function:<br /><br /><code>=UNIQUE(ReferenceWorksheet1!J2:J418)</code><br /><br />We had to accomodate for the limitation of the UNIQUE function and only reference the J column.<br /><br />Here is the solution for that COUNTIF function:<br /><br /><code>=COUNTIF(ReferenceWorksheet1!J$2:O$418,E1)</code></p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 id="why-this-matters">Why this Matters</h1>
+
+<p>There might be times in your research you’ll need to break apart materials, or create new ones. The text to columns feature is an important one to know about in the generation of certain lower code data workflows.</p>
+
+<p>At other times you may need to count or find unique variables in a larger dataset to understand some broad trends across the dataset. You could use these outcomes to make more complicated formulas that cross reference materials in different cells.</p>
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/11" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/DB/excel/13" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

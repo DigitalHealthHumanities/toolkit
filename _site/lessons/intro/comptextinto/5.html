@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Word Tokenization</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1></h1>
+
+<h2>Lesson 5: Word Tokenization</h2>
+
+
+<p>Let’s start text analysis with a single paragraph of text. The example here is the opening paragraph from <a href="https://www.gutenberg.org/files/29452/29452-h/29452-h.htm">Henry James, <em>The Wings of the Dove</em></a> (1902).</p>
+
+<p>To read this into R, copy and paste the following into the R console.
+    text &lt;- paste(“She waited, Kate Croy, for her father to come in, but he kept her unconscionably, and there were moments at which she showed herself, in the glass over the mantel, a face positively pale with the irritation that had brought her to the point of going away without sight of him. It was at this point, however, that she remained; changing her place, moving from the shabby sofa to the armchair upholstered in a glazed cloth that gave at once—she had tried it—the sense of the slippery and of the sticky. She had looked at the sallow prints on the walls and at the lonely magazine, a year old, that combined, with a small lamp in coloured glass and a knitted white centre-piece wanting in freshness, to enhance the effect of the purplish cloth on the principal table; she had above all, from time to time, taken a brief stand on the small balcony to which the pair of long windows gave access. The vulgar little street, in this view, offered scant relief from the vulgar little room; its main office was to suggest to her that the narrow black house-fronts, adjusted to a standard that would have been low even for backs, constituted quite the publicity implied by such privacies. One felt them in the room exactly as one felt the room—the hundred like it or worse—in the street. Each time she turned in again, each time, in her impatience, she gave him up, it was to sound to a deeper depth, while she tasted the faint, flat emanation of things, the failure of fortune and of honour. If she continued to wait it was really, in a manner, that she might not add the shame of fear, of individual, personal collapse, to all the other shames. To feel the street, to feel the room, to feel the table-cloth and the centre-piece and the lamp, gave her a small, salutary sense, at least, of neither shirking nor lying.”
+    words</p>
+
+<p>Hit enter. You will see the paragraph of text “printed.”</p>
+
+<p>Next, we get the <code class="language-plaintext highlighter-rouge">tokenize_words</code> function from the tokenizers package.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>words &lt;- tokenize_words(text)
+words
+</code></pre></div></div>
+
+<p>The first line assigns the tokenize_words function to the term ‘words’. The words command in the second line then outputs a word list, removing all punctuation, finding individual words, and making everything lowercase.</p>
+
+<p>To count words, we need to use the length function and associate it with the number <code class="language-plaintext highlighter-rouge">[[1]]</code> because a list object is one entry per document. Try this command with the other two:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>length(words[[1]])
+</code></pre></div></div>
+
+<p>We can ask how many times is each word used in the text, and display them as a table:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tab &lt;- table(words[[1]])
+tab &lt;- data_frame(word = names(tab), count = as.numeric(tab))
+tab
+</code></pre></div></div>
+
+<p>We can arrange the words by which ones are most frequent using the desc(count) command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arrange(tab, desc(count))
+</code></pre></div></div>
+
+<p>The most common words tend to be pronouns, articles, and conjunctions.</p>
+
+<p>A popular technique is to maintain a list of highly used words and removing these prior to any formal analysis. The words on such a list are called “stopwords”, and usually include words such as pronouns, conjugations of the most common verbs, and conjunctions.</p>
+
+<p>Stopwords (https://github.com/koheiw/stopwords) in several languages are available on GitHub.</p>
+
+<h2 id="visualizing-sentences">Visualizing Sentences</h2>
+
+<p>We have seen individual instances of words. We can also see individual sentences.
+    sentences &lt;- tokenize_sentences(text)
+    sentences</p>
+
+<p>We can also view each sentence and count its words.
+    sentence_words &lt;- tokenize_words(sentences[[1]])
+    sentence_words</p>
+
+<p>Checking the size of the output directly, we can see that there are “documents” in the object sentence_words:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>length(sentence_words)
+</code></pre></div></div>
+
+<h2 id="analyzing-a-corpus">Analyzing a Corpus</h2>
+
+<p>Finally we can point to all of the files in</p>
+
+<p>input_loc &lt;- “/Users/yourname/Desktop/corpus_text”
+Caption: Retrieving a corpus in R.</p>
+
+
+
+Lesson by: 
+
+
+
+
+
+
+
+
+
+Caterina Agostini, Indiana University<br>
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/intro/comptextinto/4" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/intro" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/intro/comptextinto/6" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

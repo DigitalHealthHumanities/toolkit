@@ -1,0 +1,170 @@
+# DH Intro
+
+/lessons/intro/whatisDH/4:
+  - term: "Critical Digital Humanities"
+    definition: "Critical digital humanities sees humanistic engagements with digital technologies as an opportunity to inspect and critique the cultural, ideological, and epistemic assumptions that ground those tools. It enables scholars to create models of computation that refute, refuse, or trouble the harmful frameworks that guide digital infrastructures."
+    
+  - term: "Epistemology"
+    definition: "Epistemology is the philosophical study of knowledge. It is interested in how and why knowledge is accepted, proved, or disproved. The lessons in this toolkit are informed by social constructivist conceptions of epistemology, which sees knowledge as dependent on a culture’s social, political, and technological infrastructures."
+    
+  - term: "Capta"
+    definition: "Capta is a reconfiguration of the pieces of information that are used in digital tools, seeing these materials as constructed, captured, and reflective of the cultures that create and use it."
+    
+  - term: "Data"
+    definition: "Data is the foundational unit for many forms of computational and non-computational research. Data, as we use the term, refers to the reduction of a phenomenon to a single measurement, allowing it to be placed within a structure that allows analysis to be employed at scale."
+    
+  - term: "Speculative Methods"
+    definition: "Speculative methods refers to approaches to culture and history that work to reinvent new models and approaches to violent pasts. Speculative historians work to create narratives that show the obvious gaps in the archive caused by carceral, colonial, white supremacist pasts, and other speculative methods imagine new ways of working against these same systems through the creation of new, imperfect methods."
+
+/lessons/intro/whatisDH/5:
+
+  - term: "Epistemology"
+    definition: "Epistemology is the philosophical study of knowledge. It is interested in how and why knowledge is accepted, proved, or disproved. The lessons in this toolkit are informed by social constructivist conceptions of epistemology, which sees knowledge as dependent on a culture’s social, political, and technological infrastructures."
+
+/lessons/intro/DHMethods/3:
+
+  - term: "Research Objects"
+    definition: "A research object is any non-human thing that you include in your research. It could be a book, a photograph, a website, a film, or something else entirely."
+
+# Tools Lessons
+
+# Excel
+
+/lessons/DB/excel/1:
+
+  - term: "Tabular Data"
+    definition: "Tabular data refers to a collection of specific information in which every piece of information is described using pre-defined categories and can be mapped into a table. Every data point has a unique coordinate, and every column and row is formatted to be unified by a specific characteristic."
+
+  - term: "Metadata"
+    definition: "Metadata refers to information about information, and it is a pillar of the library sciences. Metadata helps make sense of files, objects, or born-digital materials by describing important information—like author, publishing date, or publisher for a book—which can then be used to organize multiple objects in relation to each other."
+
+/lessons/DB/excel/2:
+  - term: "Excel Cells"
+    definition: "Cells are the different data entry points across your spreadsheet. They are demarcated through an annotation system that places them in a column and a row. They are written as [ColumnLetter][RowNumber]. Multiple cells are notated using the same format with a colon between, written as [ColumnLetter][RowNumber]:[ColumnLetter][RowNumber]. C2:D5 would include every C cell between C2 and C5 and every D cell between D2 and D5."
+
+/lessons/DB/excel/3:
+#  - term: "Excel Functions"
+#    definition: "Functions in Excel are pre-programmed processes that allow users to do complex match, data analytics, and data transformation in their workbooks. These functions often take structured inputs—in the form of numerical data, strings, or data from one or more cells—and output new information into the cell containing the function based on those inputs. They can use used to automate data throughout your spreadsheets.”
+
+/lessons/DB/excel/3:
+  - term: "Excel Sheets" 
+    definition: "A sheet is a unique single-page spreadsheet that is part of a larger collection of spreadsheets. They can be accessed at the bottom left side of the Excel interface."
+
+  - term: "Functions in Excel"
+    definition: "Functions in Excel are pre-programmed processes that allow users to do complex match, data analytics, and data transformation in their workbooks. These functions often take structured inputs—in the form of numerical data, strings, or data from one or more cells—and output new information into the cell containing the function based on those inputs. They can use used to automate data throughout your spreadsheet."
+
+# Project Management Lessons
+
+# Workflow
+
+/lessons/projectmanagement/digitalworkflows/1:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+    
+  - term: "Prototyping"
+    definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
+
+/lessons/projectmanagement/digitalworkflows/2:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+    
+  - term: "Affordance"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."   
+
+/lessons/projectmanagement/digitalworkflows/3:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+    
+  - term: "Deliverable"
+    definition: "Deliverables are concrete research or methodological outputs which are prepared to be shared with others, based on yours and your receiver’s expectations. These can be very polished—like a published book manuscript—or something that is a work in progress—like a draft you submit to a writing group. Deliverables are most important because they give us clear goals to work toward, and they help benchmark progress"
+
+  - term: "Affordance"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."   
+
+/lessons/projectmanagement/digitalworkflows/4:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+  
+  - term: "Network Graph"
+    definition: "Digital Humanities researchers use network graphs to examine the connections and relations between objects, people, and concepts. Network graphs illustrate and weight these connections in clusters generated by the amount of connections (edges) between different people, places, things and ideas (nodes)." 
+
+/lessons/projectmanagement/digitalworkflows/5:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+
+  - term: "Affordance"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."  
+
+  - term: "Text"
+    definition: ’Text’ refers to a broad category of cultural artifacts and practices that can be analyzed to understand social, political, historical, or ideological practices. This approach expands the definition beyond a singularly written text, because it allows humanists to carefully examine a broader range of human expressions, experiences, and practices, enabling humanists to analyze visual media, ephemeral activities, and material cultures."
+
+/lessons/projectmanagement/digitalworkflows/6:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+
+  - term: "Affordance"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."   
+
+  - term: "Prototyping"
+    definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
+
+/lessons/projectmanagement/digitalworkflows/7:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+
+  - term: "Affordances"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."   
+
+  - term: "Prototyping"
+    definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
+
+/lessons/projectmanagement/digitalworkflows/8:
+  - term: "Prototype"
+    definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
+  
+  - term: "Affordances"
+    definition: "The term ‘affordance’ refers to the material and technological limitations of a specific tool, platform, or method. For example, one of the affordances of a simple technology like a ballpoint pen is its ability to write."   
+
+  - term: "Transformative Processes"
+    definition: "This concept refers to the moments when scholars need to change the medium, platform, or file type of their analytical materials. This can be a transformation from analog to digital (scanning a physical book) to make it legible for digital tools or a transformation of one file type to another (changing an image from .png to .jpg) to make it easier to display online."
+
+  - term: "Text"
+    definition: ’Text’ refers to a broad category of cultural artifacts and practices that can be analyzed to understand social, political, historical, or ideological practices. This approach expands the definition beyond a singularly written text, because it allows humanists to carefully examine a broader range of human expressions, experiences, and practices, enabling humanists to analyze visual media, ephemeral activities, and material cultures.""
+
+/lessons/projectmanagement/digitalworkflows/8:
+  - term: "Protocol"
+    definition: "A protocol is a step by step guide for how to use a tool or process information during a research project."
+ 
+  - term: "Prototype"
+    definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
+
+  - term: "Transformative Processes"
+    definition: "This concept refers to the moments when scholars need to change the medium, platform, or file type of their analytical materials. This can be a transformation from analog to digital (scanning a physical book) to make it legible for digital tools or a transformation of one file type to another (changing an image from .png to .jpg) to make it easier to display online."
+
+  - term: "Analytical Processes"
+    definition: "’Analytical Processes’ more openly describes the ways digital tools are used to assist in meaning and argument making in your research."
+
+/lessons/projectmanagement/digitalworkflows/8:
+  - term: "Workflow"
+    definition: "A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument."
+
+  - term: "Prototype"
+    definition: "Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals."
+
+  - term: "Protocol"
+    definition: "A protocol is a step by step guide for how to use a tool or process information during a research project."
+
+
+/lessons/databasics/commandline/4:
+  - term: "Textual Analysis"
+    definition: "Textual analysis (or text analysis for short) refers to any method that examines large amounts of text using computational tools. Text analysis historically was used to count the use of specific words, and look at their context with other words. More contemporary text analysis uses large language models and machine learning to develop more complex groupings of interrelated words (topic modelling) or weight texts based on the positive or negative affect of words used (sentiment analysis)."
+
+  - term: "Data Cleaning"
+    definition: "Often we have to make the files we are using in our digital research compatible with our platforms. We have to deal with any errant mistakes or issues with those data sources. Removing the unnecessary information in data files is known as data cleaning."
+
+  - term: "Digital Health Humanities"
+    definition: "The Digital Health Humanities is an interdisciplinary field that applies digital humanities methods to answer questions on human experiences of health."
+
+/lessons/intro/comptextinto/3:
+  - term: "Corpus"
+    definition: "A corpus is a collection of written materials that have been made machine readable, and which can be analyzed in bulk using different computational text analysis methods."

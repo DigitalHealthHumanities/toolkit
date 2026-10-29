@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Installing R & Basic Functions</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1></h1>
+
+<h2>Lesson 4: Installing R & Basic Functions</h2>
+
+
+<p>Text analysis examines large amounts of textual information. R is a programming language designed primarily for statistical computing and data analysis.</p>
+
+<p>Text analysis, also known as text mining, refers to the computational examination of large volumes of documents, focusing on language, context, and patterns. It is a methodological approach that is applicable to various fields, including the humanities, sociology, communications, and computer science. Common text analysis case studies involve books, articles, news, and tweets. Text mining consists of these steps:</p>
+
+<ul>
+  <li>Creating a dataset</li>
+  <li>Exploring text analysis strategies</li>
+  <li>Interpreting findings.</li>
+</ul>
+
+<h2 id="download">Download</h2>
+<p>R is a programming language designed primarily for statistical computing and data analysis. It offers a wide array of statistical techniques, including linear and nonlinear modeling, time-series analysis, classification, and clustering. Additionally, R supports graphical representations of data, making it a popular choice for making plots and charts.</p>
+
+<p>Highly extensible, R allows users to create packages that add new functionalities. While it is widely utilized by statisticians and data analysts, it has been adapted to answer research questions in the humanities and digital humanities.</p>
+
+<p><a href="https://posit.co/products/open-source/rstudio/#Desktop">https://posit.co/products/open-source/rstudio</a></p>
+
+<p>RStudio is an integrated development environment (IDE) for R, designed to make it easier to write and run R code. It provides a user-friendly interface that includes features such as syntax highlighting, code completion, and a built-in console. RStudio also offers tools for data visualization, package management, and project organization, making it easier to manage R scripts and files. Additionally, it supports RMarkdown for creating dynamic reports that combine code, output, and text. Overall, RStudio enhances the R programming experience by providing a comprehensive environment for coding, analysis, and reporting.</p>
+
+<p>Another option is to access R and RStudio through university-licensed software from any device.</p>
+
+<p>If you want a fast, easy way to try R, you can use the <a href="https://rstudio.cloud/">RStudio Cloud</a>. It is a cloud-based version of RStudio that allows users to write and run R code in a web browser without needing to install software on their local machines.</p>
+
+<p>This web browser version of RStudio looks and functions just like the desktop version, and it will save data between sessions as well. </p>
+
+<p>All it takes is a Google or GitHub account to log on.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>First, <a href="https://cran.rstudio.com/">download R</a> for your operating system. R is the programming language.</p>
+
+<p>Second, it is recommended to <a href="https://www.rstudio.com/products/RStudio/">download RStudio</a>. RStudio is an integrated development environment (IDE) that makes scripting in R much easier.</p>
+
+<p>Both R and RStudio are free and open-source software.
+[Caption: This is what the RStudio interface looks like when you open it.]: #</p>
+
+<p>When you launch RStudio, you’ll notice the default panes:</p>
+
+<ul>
+  <li>Console (left, with the &gt; prompt)</li>
+  <li>Environment/History/Connections/Tutorials (tabbed, upper right)</li>
+  <li>Files/Plots/Packages/Help/Viewer/Presentation (tabbed, lower right).</li>
+</ul>
+
+<blockquote>
+  <p>Programming is helpful in the humanities because you understand more deeply what computers do to your data. By understanding the workings of an algorithm, you can better justify your claims as well as understand the ways algorithms may distort the data.</p>
+</blockquote>
+
+<p>The work of data analysis becomes transparent. Since we’re writing code, we can trace the steps we made to make something.</p>
+
+<p>We start to correct for the problem of tools shaping research questions. In other words, we build the tool to fit our questions.</p>
+
+<h2 id="install-r-packages">Install R packages</h2>
+
+<p>To install R packages, open RStudio, then type and run these lines in the console:
+    install.packages(“tidyverse”)
+    install.packages(“tidytext”)
+    install.packages(“tokenizers”)
+    install.packages(“quanteda”)
+    install.packages(“quanteda.textmodels”)
+    install.packages(“quanteda.textstats”)
+    install.packages(“quanteda.textplots”)
+    install.packages(“readtext”)
+    install.packages(“devtools”)
+    install.packages(“quanteda.corpora”)
+    install.packages(“newsmap”)
+    install.packages(“seededlda”)</p>
+
+<blockquote>
+  <p>tidyverse provides convenient tools for reading in and working with data sets.</p>
+</blockquote>
+
+<blockquote>
+  <p>tokenizers contains the functions that allow us to split text data into words and sentences.</p>
+</blockquote>
+
+<p>Depending on your system setup, these may open a dialog box asking you to choose a “mirror” to download from. Select one near your current location. Then, follow and confirm download and installation as you get the automatic prompt to do so.</p>
+
+<p>Now, ask R to load these packages through the <code class="language-plaintext highlighter-rouge">library</code> command. The <code class="language-plaintext highlighter-rouge">library</code> commands must be run every time you restart R.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(tidyverse)
+library(tokenizers)
+</code></pre></div></div>
+
+<h3 id="running-r">Running R</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(tidyverse)
+library(tokenizers)
+</code></pre></div></div>
+
+<p>Let’s enter some numerical values in R:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a &lt;- 10
+b &lt;- 20
+a &lt;- b
+print(a)
+</code></pre></div></div>
+
+<p>Let’s try doing math in R:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sum(c(10,20,30))
+</code></pre></div></div>
+
+<p>To display ( or print) a text, use the R-command cat() or print(). The text is considered by R as a script, so we need to have the text in quotes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat("Hello world")
+print("Hello world")
+</code></pre></div></div>
+
+<p>Let’s try defining a message and then using the print command to display it:
+    msg &lt;- “Have a good day!”
+    print(msg)
+    print(“msg”)</p>
+
+<p>What differences do you notice between these two examples?</p>
+
+
+
+Lesson by: 
+
+
+
+
+
+
+
+
+
+Caterina Agostini, Indiana University<br>
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/intro/comptextinto/3" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/intro" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/intro/comptextinto/5" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

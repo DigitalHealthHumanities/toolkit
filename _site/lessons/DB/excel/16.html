@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Export Formats</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Export Formats</h1>
+
+<h2>Lesson 16: Export Formats</h2>
+
+
+<p>Excel has all of these helpful tools and equations that help process data. Oftentimes, though, you will not be using Excel for your final analysis. You may be transporting that data to another program or tool to produce observations, findings, or visualizations. We do this a few different times in this toolkit, including in our introduction to Gephi.</p>
+
+<p>Excel is a great program for formatting and preparing data for use in different programs, but in order for it to be useful, we need to understand how to get information out of Excel’s proprietary file types.</p>
+
+<p>Click on the File button at the top of the Excel interface and from there click on the “Save As” button. Some of the more recent changes to the Microsoft Office platform and Microsoft 365 has been a change in how the program offers exports. “Save As” is an old function that allows you to create a copy of the current project in a new file, usually named differently than the original. Click on the dropdown tab that is below the Downloads heading and above the “Save” button. You’ll see a bunch of different file types that Excel can save into. (If you want a more standard looking version of this interface you can also press the “more options” link.)</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel16.jpg" class="img-fluid" alt="A screenshot of the options available for file formats in the ‘Save As’ interface." />
+    <p class="caption">Excel can export dozens of different file formats. Some of these are designed to make current versions of Excel compatible with previous versions of Excel, and others are open-source formats that are more usable across different programs and tools. Comma Separated Value (.csv) and Tab Separated Value (.tsv) are two of the most useful formats for use in the digital humanities.</p>
+</div>
+
+<p>For exporting to other programs, ranging from ArcGIS to code-based analysis programs like R, we will want to use either .csv –short for comma separated values—or .tsv—short for tab separated values—as our export of choice.</p>
+
+<p><em>Helpful Information: What is a Comma Separated Value File?</em>
+Comma Separated Value files organize your tabular data using commas as a delimiter. If I have a table in excel that reads</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Name (Last)</td>
+      <td>Name (First)</td>
+      <td>Affiliation</td>
+    </tr>
+    <tr>
+      <td>Doe</td>
+      <td>John</td>
+      <td>University of California San Francisco</td>
+    </tr>
+    <tr>
+      <td>Johnson</td>
+      <td>Julia</td>
+      <td>University of California Berkeley</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A comma separated value file would represent this in an entirely textual way. The file would read:</p>
+
+<p>&lt;div class=”backsplash”&gt;“Name (Last)”,”Name (First)”,”Affiliation”<br />“Doe”,”John”,”University of California San Francisco”<br />“Johnson”,”Jane”,”University of California Berkeley”&lt;/div&gt;</p>
+
+<p>What you should notice is that the columns are split using the “,” in each line, and each line is split using the line break. What is helpful about these files is that 1) they are entirely text-based, so they don’t have messy formatting or other data that could cause issues and 2) CSV files follow open source, non-proprietary guidelines. They are easier to work with across platforms, and they are more reliable when it comes to long-term sustainability.</p>
+
+<p>Let’s try exporting our file as a .csv file. Going back to File&gt;Save As change the file to CSV.</p>
+
+<p>Now, you will have run into an issue. CSV files do not support multiple sheets. This means that in order to save each of these sheets, we’d need to save them one at a time.</p>
+
+<p>Click “cancel” and navigate to the ReferenceWorksheet1 sheet, and then do the same “Save As”: File&gt;Save As and select .csv. When you get the error message press “Ok”. When you do you should find a ExcelLearningWorkbook.csv in whatever folder you were working in. You can open this back up in Excel, but let’s open it instead with a text editor.</p>
+
+<p>&lt;div class=”backsplash”&gt;<strong>An Important Note:</strong> You will need to be selecting and viewing the specific sheet you wish to export into a .csv file when you do the “Save As” function. .csv files are not designed to cross reference multiple unique spreadsheets sheets in the way Excel is.&lt;/div&gt;</p>
+
+<p>Right click the file, select “Open With” and “Notepad”. You should have a file that reads like this:
+&lt;div class=”backsplash”&gt; Identifier,Page Number,Image Type,Monograph Source,Title (from Monograph Source),Author (from Monograph Source),First (from Name) (from Monograph Source),Genre,Publication Type,Genre,,,,,,,Terms,Counts<br />Gravesen_SurgicalTreatmentofPulmon_1925_77a,77a,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,<br />Gravesen_SurgicalTreatmentofPulmon_1925_77b,77b,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,<br />Gravesen_SurgicalTreatmentofPulmon_1925_78a,78a,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,<br />Gravesen_SurgicalTreatmentofPulmon_1925_78b,78b,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,<br />Gravesen_SurgicalTreatmentofPulmon_1925_79,79,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,<br />Gravesen_SurgicalTreatmentofPulmon_1925_80a,80a,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,<br />Gravesen_SurgicalTreatmentofPulmon_1925_80b,80b,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,<br />Gravesen_SurgicalTreatmentofPulmon_1925_81,81,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,<br />Gravesen_SurgicalTreatmentofPulmon_1925_82,82,X-Ray,Gravesen_SurgicalTreatmentofPulmon_1925,Surgical Treatment of Pulmonary and Pleural Tuberculosis,Gravesen,J.,Scientific,Article,Pathological,Organ,,,,,,,&lt;/div&gt;</p>
+
+<p>Again this file is less user friendly, but is more friendly for some of the other programs we will be using. You can export all of the sheets in this workbook, but remember that you will need to change the filename as you export multiple sheets.</p>
+
+<p>This will be a very important skill across this toolkit, so be sure to be comfortable exporting from Excel to other file types.</p>
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/15" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/DB/excel/17" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

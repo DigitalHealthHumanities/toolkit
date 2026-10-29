@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Find Command</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1></h1>
+
+<h2>Lesson 4: The Find Command</h2>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <p><strong>A Note: This lesson is currently formatted for PC ONLY. A Mac Version will be added to the site soon.</strong></p>
+
+<p><strong>Required: You will need to download and unzip the <a href="https://ucsf.box.com/s/xlyqx9t24e2su78ww2jh52f6xc2xp4va">command prompt files</a> for this lesson.</strong></p>
+
+<p>The command line has the ability to process text files in important and unique ways. While some programs and approaches can do more granular analysis, the command line can introduce us to some simple ideas around computational text analysis.</p>
+
+<p>This also can teach us some of the basics of inputting commands into the command line, and understanding how it functions.</p>
+
+<p>To learn these tools, first navigate to the command prompt folder in your downloads. (If you are confused about how to navigate see section 2b.2.)</p>
+
+<p>Once you are there, let’s see what we’re working with. To look at what is in the directory type the following code: <code>dir</code></p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/CLWin3.JPG" class="img-fluid" alt="Directory of C:\Users\spurcell" />
+    <p class="caption">Starting with spurcell's user folder</p>
+</div>
+
+<p>The files in the directory are text files, demarcated with the .txt suffix for each file. Text files are just that: files that only contain textual information. There are other file types you may work with regularly like Adobe’s portable document format (.pdf), or Microsoft Word’s files (.docx), or compressed image files in the joint photographic experts group file type (.jepg or .jpg). All files have this suffix, and computer programs look at these suffixes to determine whether the file is readable.</p>
+
+<p>The [PLACEHOLDER] files in this folder are all text files for materials related to the history of tuberculosis around 1910 and 1920. They were originally taken from HathiTrust, but they have been formatted in such a manner as to have every page be its own unique line in the text. This is what the file BrownSampson_IntestinalTuberculosisIts_1926.txt looks like when opened using a text editor.</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/CLWin4.JPG" class="img-fluid" alt="Text files in  C:\Users\spurcell\Downloads\command prompt directory" />
+    <p class="caption">28 txt files in the command prompt folder</p>
+</div>
+
+<p>We won’t have to change these files in any way, but it usually useful to get a sense of what is happening inside a document before you start using code on it. This document has been formatted in a particular way, but it is obviously not cleaned. There’s a lot of extra punctuation that the optical character recognition (OCR) tool did not read correctly. This is fine for this activity, but might run into problems later down the line.</p>
+
+<p>We can also learn about these tools using Voyant—a web-based text analysis tool. (See our text analysis introduction for more information about Voyant.)</p>
+
+<p>Based on this little information we have, we can use the command line to look for specific terms and count them.</p>
+
+<p>While you are in the command prompt directory type in: <code> find /c “tuberculosis” * </code></p>
+
+<p>You will get this output:</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/CLWin5.JPG" class="img-fluid" alt="Returned term count for searching 'tuberculosis' in all files in the directory" />
+    <p class="caption">Our command returned 22 instances of tuberculosis in the files</p>
+</div>
+
+<p>What you have done is use the command “find” using a specific set of commands and characters that have defined what the computer will look for.</p>
+
+<p>The “find” command works in sequential order with a space between each command. The command works like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find [parameters marked with a ‘/’ slash] [the search string enclosed in quotation marks “”] [what files it will look at] 
+</code></pre></div></div>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">String</p>
+        <p>A string is a line of characters which a computer can use for specific programmatic functions.</p>
+    </div>
+</div>
+
+<p>The parameter used in this command is ‘/c’ which counts each time the string appears in the text. And the asterisk ‘*’ at the end of the command is a wild character—which means that the computer will look for all files in the directory.</p>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">More information:</p>
+        <p>We could use the asterisk to search for a specific file type by typing “*.txt” at the end of this search. We could also use it to define specific files, so if I wanted to only read the transactionsofthefifteent15_1919.txt and transactionsofthesectiono_1923 I could write “trans*” at the end of my search command.</p>
+    </div>
+</div>
+
+<p>We can think of a find command as having a kind of grammar and logic the command we used above,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find /c “tuberculosis” * 
+</code></pre></div></div>
+
+<p>Can be read as</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In the current directory, find and count every instance of the term “tuberculosis” in every file. 
+</code></pre></div></div>
+
+<p>There are a few other parameters that are important to know, like the /i which searches for the string without considering capitalization. This can matter because sometimes terms may be capitalized or not capitalized across a document.</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/CLWin6.JPG" class="img-fluid" alt="Returns the apprearance count for the term 'tuberculosis' for each file as a result of: C:\Users\spurcell\Downloads\command prompt &gt; find /c 'tuberculosis' *" />
+    <p class="caption">Solution for tuberculosis term count command</p>
+</div>
+
+<p>Before we go to the next step, try searching for a few terms of these terms:</p>
+
+<ul>
+  <li>Google</li>
+  <li>E. L. Trudeau</li>
+  <li>tuberculin</li>
+</ul>
+
+<p>The first term ‘google’ shouldn’t show up, because these documents come from the early twentieth century. The other two terms E. L. Trudeau and tuberculin refer to specific historical actors and practices. What is important, at least for E. L. Trudeau is that he might show up in the files in a few different ways, because E. L. might be written out as his full name Edward Livingston Trudeau.</p>
+
+    </div>
+    <div class="col-md-4">
+        <div class="mx-auto card">
+    <div class="card-body dhht-definition">
+        <h3>Key Terms</h3>
+        
+        <hr />
+        <p class="term" id="textual-analysis">Textual Analysis</p>
+        <p>Textual analysis (or text analysis for short) refers to any method that examines large amounts of text using computational tools. Text analysis historically was used to count the use of specific words, and look at their context with other words. More contemporary text analysis uses large language models and machine learning to develop more complex groupings of interrelated words (topic modelling) or weight texts based on the positive or negative affect of words used (sentiment analysis).</p>
+        
+        <hr />
+        <p class="term" id="data-cleaning">Data Cleaning</p>
+        <p>Often we have to make the files we are using in our digital research compatible with our platforms. We have to deal with any errant mistakes or issues with those data sources. Removing the unnecessary information in data files is known as data cleaning.</p>
+        
+        <hr />
+        <p class="term" id="digital-health-humanities">Digital Health Humanities</p>
+        <p>The Digital Health Humanities is an interdisciplinary field that applies digital humanities methods to answer questions on human experiences of health.</p>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+Lesson by: 
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/databasics/commandline/3" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/databasics/commandline/5" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

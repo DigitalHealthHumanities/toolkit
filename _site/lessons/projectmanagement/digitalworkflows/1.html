@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workflows in the Digital Humanities</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Digital Workflows</h1>
+
+<h2>Lesson 1: Workflows in the Digital Humanities</h2>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <p>If you read the introduction to Gephi or QGIS provided in this toolkit, you might be familiar with the idea that sometimes for digital projects, you may need to use multiple tools or programs to produce your desired research outputs. We advocate for uploading information into a tool like Gephi because other programs, like Microsoft Excel, are built to be flexible, customizable, and the data you input can be transformed within the platform for other uses. In those lessons, we wanted to silently convey a secondary lesson: often, in computational research, we will need to move our data between platforms, transforming that data to fit the predefined data structures those tools use.</p>
+
+<p>While this concept of moving between platforms and formats is especially important for digital tools, it is also something that non-digital scholars still practice. Researchers have to juggle technologies and platforms to share their work, to draft their arguments, and to access and catalogue their sources.</p>
+
+<p>Think about the processes and tools you use to draft and share your written work.</p>
+
+<p>To write a journal article or draft a chapter for an edited volume you may need to read articles (provided as .pdfs) on Adobe Acrobat, cite those sources with a citation manager like Zotero, and draft the essay on Microsoft Word. You may have also shared drafts with collaborators on Gmail or Microsoft Outlook, or printed those materials using a departmental printer, or read a primary source in a bound book.</p>
+
+<p>We often do not recognize how quickly and easily we slip between different technologies and media in our research, because engaging with those forms is second nature to us. We are familiar with bound monographs, with the affordances of a word processor, and the practices associated with writing an email. Because these are second nature, we ignore moments of friction when attaching a draft to an email or when quoting a passage from a physical book, which, when we did it the first time, might have been more complicated or unintuitive.</p>
+
+<p>The practices described above are a form of a project <a class="term" href="#workflow">workflow</a>
+, or the transformation of information from one media format, data structure, or digital tool to another.</p>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Workflow</p>
+        <p>A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument.</p>
+    </div>
+</div>
+
+<p>While the examples we provided above do not require much mental load, as scholars begin to adopt new digital tools into their projects, it can become complicated and time consuming. This is because many tools require unique forms of data, unique file types, or are incongruous with the information we have already prepared in our research.</p>
+
+<p>This lesson will help you learn how to develop and test a data workflow for your project through the process of <a class="term" href="#prototyping">prototyping</a>
+. In this lesson you will learn how to conceptualize your scholarly evidence as it passes through different digital tools and platforms. It will teach you how to sketch out those transformations. And it will teach you how to think about the different tools you might want to incorporate in your research.</p>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Prototyping</p>
+        <p>Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals.</p>
+    </div>
+</div>
+
+
+    </div>
+    <div class="col-md-4">
+        <div class="mx-auto card">
+    <div class="card-body dhht-definition">
+        <h3>Key Terms</h3>
+        
+        <hr />
+        <p class="term" id="workflow">Workflow</p>
+        <p>A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument.</p>
+        
+        <hr />
+        <p class="term" id="prototyping">Prototyping</p>
+        <p>Prototyping refers to the development and testing of project methods and tools using a small sample size. The prototyping phase helps scholars work through technical snags early on, while also creating evidence for publications and grant proposals.</p>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+Lesson by: 
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+         
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/projectmanagement" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/projectmanagement/digitalworkflows/2" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

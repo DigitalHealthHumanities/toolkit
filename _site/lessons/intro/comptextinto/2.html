@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The First Computational Text Analysis Project: The 'Index Thomisticus'</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1></h1>
+
+<h2>Lesson 2: The First Computational Text Analysis Project: The 'Index Thomisticus'</h2>
+
+
+<p>A pivotal project that marked the inclusion of digital scholarship began with Father Roberto Busa, S.J., and his Index Thomisticus (in Latin, “Index of St Thomas Aquinas”). Busa made a concordance of the corpus, or collected works, of St Thomas Aquinas (https://www.britannica.com/biography/Saint-Thomas-Aquinas), who is a Doctor of the Church. Aquinas, an Italian Dominican friar and priest, is regarded as the foremost Scholastic thinker due to the profound impact of his theological treatises, commentaries, and philosophical writings. The Corpus Thomisticum, the collected works of St Thomas Aquinas, encompasses approximately 11 million words. Father Busa’s work represents an initiative in <strong>computational linguistics</strong>—a field now recognized as part of <strong>Digital Humanities (DH)</strong>.</p>
+
+<p>Previous concordances, such as the one compiled by James Strong, the <a href="https://www.google.com/books/edition/The_Exhaustive_Concordance_of_the_Bible/3TBGAQAAMAAJ?hl=en&amp;gbpv=0">Concordance of the Bible</a> (1894), were created manually and listed thousands of words, including the 8,674 Hebrew words of the Old Testament and the 5,624 Greek words of the New Testament. This project took thirty-five years to complete. Knowing about the work of philologists, Father Busa believed there had to be a more efficient way to generate textual information, particularly with the aid of technology. 
+The <a href="https://www.corpusthomisticum.org/it/index.age">Index Thomisticus project is now accessible online</a>.</p>
+
+<h2 id="from-corpus-linguistics-to-ibm">From Corpus Linguistics to IBM</h2>
+
+<p>Father Busa recognized the scale of the task ahead, especially if he attempted to produce a concordance by hand—an extensive process that would involve systematically ordering all words in a text alongside relevant metadata. In 1946, he became interested in creating a concordance of the corpus he studied–the works of <a href="https://www.britannica.com/biography/Saint-Thomas-Aquinas">St. Thomas Aquinas</a>.</p>
+
+<p>Building on his doctoral research (1949), Father Busa planned to track <strong>word occurrences</strong> and the decision to work computationally gained traction after he began collaborating with <strong>IBM</strong> in 1949 (Busa 1951). Father Busa’s project, thus, combined theological studies with computer-based technologies. The Index Thomisticus aimed to make a comprehensive concordance of all St. Thomas Aquinas’s works and related texts, culminating in a series of fifty-six printed volumes completed in 1980.</p>
+
+<h2 id="from-punch-cards-to-machine-readable-texts">From Punch Cards to Machine-Readable Texts</h2>
+
+<p>Father Busa made significant efforts to collaborate with a leading technology company of his time. Through his Jesuit connections at Fordham University, he arranged a meeting with Thomas J. Watson, the President of IBM. This meeting led to his collaboration with Paul Tasman, an IBM engineer who was knowledgeable about contemporary data processing equipment. Punch cards, previously used for data storage, served as a medium for storing, sorting, and reporting data processed by punched card equipment and computers.</p>
+
+<p>Rockwell and Sinclair argued that the technology utilized by Busa and Tasman represented key innovations facilitating the application of data processing to unstructured text data. Consequently, Busa and Tasman’s humanistic perspective on technology and their goals influenced the algorithm they developed for the final product.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>Their process with the punch cards generally followed these steps:</p>
+
+<ul>
+  <li><strong>Keypunch</strong>: Encoding words and phrases as patterns of punched holes on a card. This was done in two stages:
+    <ul>
+      <li>First, a scholar forms phrases</li>
+      <li>Second, a punch card operator encodes phrases using keypunch technology.</li>
+    </ul>
+  </li>
+  <li><strong>Reproducing Punch</strong>: Copying the encoded information onto multiple cards, with each card representing a single contextual entry.</li>
+  <li><strong>Sorter</strong>: Alphabetizing the decks of cards and grouping them by related classifications.</li>
+  <li><strong>Tabulator</strong>: Reading the data from the cards and printing it onto continuous-feed paper.</li>
+  <li><strong>Collator</strong>: Checking the accuracy of the transcriptions using multiple sets of cards, akin to the collation of variant texts in traditional textual studies.</li>
+</ul>
+
+<p>Father Busa sought to go beyond the contextual interpretation of the texts so that he could renew the study of philology. By rigorously examining the semantic and lexical properties of St. Thomas Aquinas’s writings, he devised his own algorithmic process for recording textual information using handwritten cards, reflecting a deeply traditional approach to text. Steven Jones discussed Busa’s technological innovation as follows:</p>
+
+<blockquote>
+  <p>For Busa, mechanization was to serve <a class="term" href="#hermeneutics">hermeneutics</a>
+. He aimed to interpret, to reveal meaningful patterns, different dimensions of the language. It’s just that some dimensions were too extensive (while their evidence was too minute) to be grasped by the unassisted eye and mind of the reader across an oeuvre of over ten million words. Philosophical and theological questions drove his linguistic research, and this led him to develop the complex process of literary data analysis. Looked at another way, in the Jesuit tradition, Father Busa sought the divine presence in all things; IBM’s punched-card machinery was at first only a means to this ultimate end.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+</blockquote>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Hermeneutics</p>
+        <p>Hermeneutics refers to the philosophical field that describes the process of reading and understanding texts.</p>
+    </div>
+</div>
+
+<p>Father Busa recognized the significance of <strong>deep reading</strong> and connected it to the <strong>Jesuit tradition of scholarship</strong>. He dedicated many years to his Index Thomisticus project, ultimately producing over fifty volumes containing a concordance of Aquinas’s works. During this process, he established a <strong>linguistics center in Gallarate, Italy</strong>, which trained many technical workers in the complex IBM technology of the time. This center effectively served as a quasi-institute for Jesuit education in the region and connected with other institutions worldwide, including Georgetown University in Washington, D.C.</p>
+
+<p>The main technology used was based on punched cards, which were modified versions of the IBM 80-column punch card, adapted to accommodate the replication and semantic information required for the concordance.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> These developments would play an essential role in literary and textual analysis, highlighting the potential of computational power for purposes beyond numerical analysis.</p>
+
+<p>Each step in the punch card process required knowledgeable and trained punch card operators, often women. Then, Busa and Tasman iterated through this procedure many times before finalizing the process that produced the Index Thomisticus.</p>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Rockwell, Geoffrey, and Stéfan Sinclair. 2020. “Tremendous Mechanical Labor: Father Busa’s Algorithm.” Digital Humanities Quarterly 14 (3). <a href="https://dhq.digitalhumanities.org/vol/14/3/000456/000456.html">Link</a>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Jones, Steven E. 2016. Roberto Busa, S.J., and the Emergence of Humanities Computing: The Priest and the Punched Cards. Routledge. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Rockwell, Geoffrey, and Stéfan Sinclair. “Tremendous Mechanical Labor: Father Busa’s Algorithm.” <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+Lesson by: 
+
+
+
+
+
+
+
+
+
+Caterina Agostini, Indiana University<br>
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/intro/comptextinto/1" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/digital basics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/intro/comptextinto/3" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

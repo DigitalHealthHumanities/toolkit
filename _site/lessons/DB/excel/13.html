@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easier Data Entry: Data Validation</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Introduction to Tabular Data and Microsoft Excel</h1>
+
+<h2>Lesson 13: Easier Data Entry: Data Validation</h2>
+
+
+<div class="backsplash">For this exercise, you will need to download the Excel Learning Workbook.<br /><br /> For this and the following exercises, we will be using the ReferenceWorksheet2 sheet.</div>
+
+<p>The function in Excel that we will cover in this lesson is the Data Validation Tool. This tool can be used to help structure cells to allow only specific kinds of inputs—like only inputting numbers, or only inputting a specifically predefined textual options. We are going to use a reference sheet—the DataForRW2 sheet in our workbook—to create categories to assist with data entry.</p>
+
+<p>Click to the ReferenceWorksheet2 sheet, and select the C2 cell. This cell shows what we are trying to generate: a cell that has a drop down carrot that allows for the selection of a few predefined entries.</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel15.jpg" class="img-fluid" alt="A screenshot of an Excel spreadsheet. The C2 cell is selected, and it has a dropdown carrot, allowing the user to select between four entries: 'X-Ray', 'Photograph', 'Illustration', and 'Graphic'" />
+    <p class="caption">The carrot has the image type categories from the previous worksheet. What you will see is that the text entry box does not have a function formula in it, but instead only reads as the selected entry.</p>
+</div>
+
+<p>We’ll select one cell, C3, and press the Data Validation Button in Data &gt; Data Tools &gt; Data Validation.</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel28_Captions.jpg" class="img-fluid" alt="A screenshot the Excel Data Tab. A box highlights the tab header with the caption ‘You Need to be in the Data Tab’. A second box highlights the button to activate the Data Validation tool. This box has a caption: ‘The Data Validation Tool is Hidden Here.’" />
+    <p class="caption">The Data Validation tool is hidden in the data tools section. It can be hard to find the first time.</p>
+</div>
+
+<p>When you push the button for the Data Validation Tool, you will get an interface similar to the Text to Columns Wizard. We have to adjust some of the settings. First, change the “Allow” criteria to “List”. This will tell Excel to validate using a list from a source within the Excel spreadsheet.</p>
+
+<p>The source we want is found in the DataForRW2 sheet, cells A2 to A5. You can write out the source in the Source box,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=DataForRW2!$A$2:$A$5
+</code></pre></div></div>
+
+<p>Or, once you click into the Source Box, you can highlight and select those cells manually.</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel14.jpg" class="img-fluid" alt="A screenshot the Data Validation Tool. The 'Settings' Tab is selected. The 'Allow' entry area has ‘List’. The ‘Data’ entry area is greyed out. Both ‘Ignore blank’ and ‘In-cell dropdown are checked’ and the Source area the code ‘=DataForRW2!$A$2:$A$5’ written in the text entry box." />
+    <p class="caption">You will want to double check that the ‘In-cell Dropdown’ option is checked, because it is important for the dropdown functionality we are going for in this lesson.</p>
+</div>
+
+<p>We are using the “$” character because we’ll be copying this down the row, and we don’t want our selection to change as we copy the information. (Excel will enter these automatically when you select the text manually.) Press “OK” and you will find that the cell now has an arrow next to it when you select it. It is referencing the cells in the other sheet, which have the corresponding information to the data.</p>
+
+<p>Press “OK” and you should see the cell you selected change and have a carrot next to it. Click on that and you should see the options from the DataForRW2 worksheet. If you select one of the options, it will automatically fill the cell.</p>
+
+<p>This can be a helpful feature if you have preformatted information that you want to fill in the workbook.</p>
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/12" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/DB/excel/14" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

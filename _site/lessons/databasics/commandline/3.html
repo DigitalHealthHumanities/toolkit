@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navigating Your Computer's Folders</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1></h1>
+
+<h2>Lesson 3: Navigating Your Computer's Folders</h2>
+
+
+<p><strong>A Note: This lesson is currently formatted for PC ONLY. A Mac Version will be added to the site soon.</strong></p>
+
+<p><strong>To do the next step, please download and unzip the <a href="https://ucsf.box.com/s/xlyqx9t24e2su78ww2jh52f6xc2xp4va">working files folder</a>. (For the examples, I have unzipped this folder in my downloads folder.)</strong></p>
+
+<p><strong>This introduction assumes that the files you have downloaded are in the downloads folder. If they aren’t be sure to put them there!</strong></p>
+
+<p>When we open the Command Prompt, we’ll start in the same place: your user folder. This is what a user folder might look like. (You can access it by clicking on your OSDisk, which is the C drive for this computer, clicking on the folder titled ‘Users’ and clicking on the folder with your username. For this example the user is ‘spurcell’.)</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/CLWin2.JPG" class="img-fluid" alt="User Folder Contents at 'This PC &gt; OSDisc(C:) &gt; Users &gt; spurcell'" />
+    <p class="caption">spurcell's User Folder Contents as seen in Windows File Explorer</p>
+</div>
+
+<p>If you are lost, you can always use the GUI folder hierarchy to help you search, because they are looking at the same thing.</p>
+
+<p>Let’s write our first command. Type the following into the Command Prompt: <code>dir</code></p>
+
+<blockquote class="blockquote text-right">
+    <p>Displays a list of a directory's files and subdirectories. If used without parameters, this command displays the disk's volume label and serial number, followed by a list of directories and files on the disk (including their names and the date and time each was last modified). For files, this command displays the name extension and the size in bytes. This command also displays the total number of files and directories listed, their cumulative size, and the free space (in bytes) remaining on the disk.</p>
+    <footer class="blockquote-footer">
+        
+            <cite title="'dir', Windows Server Documentation">'dir', Windows Server Documentation</cite>
+        
+    </footer>
+</blockquote>
+
+<p>This command—‘dir’—is short for ‘directory’. It will output all of the potential directories and files that you can access from your current place in the computer.</p>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Directory</p>
+        <p>A directory is a collection of files and directories which the command line accesses. Often, we call them folders, largely because of their iconography in contemporary GUIs</p>
+    </div>
+</div>
+
+<p>The ‘dir’ command can help us if we are lost, or if we do not know what directories of files we have access to at a given moment.</p>
+
+<p>Let’s look at that output from that command. This is how it looks like on my computer:</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/CLWin3.JPG" class="img-fluid" alt="Folders in the Directory of C:\Users\spurcell, including 5 files and 33 directories" />
+    <p class="caption">33 directories in spurcell's user folder</p>
+</div>
+
+<p>I can see the folder ‘downloads’ in the directory, which means that I can move to that folder in the Command Prompt. To do this, we will need to use a different command, ‘cd’ or change directory.</p>
+
+<p>So type in:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd downloads
+</code></pre></div></div>
+
+<p>The Command Prompt processes this function by first reading the command—‘cd’—and then reading the additional information designating specifics about how to execute that command. Typing in ‘cd downloads’ is telling the command prompt to change directories to a directory named ‘downloads’.</p>
+
+<p>Once we’re in downloads we will need to access the directory that holds the files we’re going to use. This directory, which needs to be unzipped, is titled ‘commandline_examples’. To access it type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd commandline examples
+</code></pre></div></div>
+
+<p>You just ran into a problem, right? It is important to know that when navigating folders, you may run into issues with files with spaces—’ ‘—in them. The reason for this error is that the Command Prompt reads each space as a new kind of information (we’ll see how this operates later in this lesson!). To fix this, we have to escape out—or create an argument in the Command Prompt—that it recognizes as a single unit, using quotation marks.</p>
+
+<p>Try this instead:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd "commandline examples"
+</code></pre></div></div>
+
+<p>There are a few more things to know before we move forward. First, we can move backwards in the directory hierarchy using the following command</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ..
+</code></pre></div></div>
+
+<p>This command tells us to go to the directory that contains our current working directory. Let’s do the ‘cd ..’ a second time to return to the user directory.</p>
+
+<p>We can also navigate multiple steps through directories by compounding them using the backslash.</p>
+
+<p>From the user directory (the directory which we started this exercise) type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd "downloads\commandline examples"
+</code></pre></div></div>
+
+<p>The last thing we need to do, before actually using the Command Prompt to do some text analysis is that we’ll need a directory into which our analyses will be output. To do this type</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir outputs 
+</code></pre></div></div>
+
+<p>This command makes a directory—‘mkdir’ is short for make directory—and titles the directory whatever we write after the space.</p>
+
+<p>We can navigate to that directory by typing ‘cd outputs’ or navigate out of it by typing ‘cd ..’.</p>
+
+
+
+Lesson by: 
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/databasics/commandline/2" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/databasics/commandline/4" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

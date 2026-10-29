@@ -1,0 +1,10 @@
+---
+name: Mallika Khanna
+affiliation: Indiana University
+association: awardee
+headshot: default-profile-img.jpg
+bio: "Mallika Khanna is a PhD student at The Media School at Indiana University Bloomington. Stitching together objects across a wide range of digitized sites including social media sites, blogs, apps and streaming platforms, her dissertation considers how racialized healing is taking on new meaning through emerging understandings of trauma as epigenetic inheritance. Her work straddles many disciplines and fields, including medical humanities, technology studies, media studies and critical race and ethnic studies. She has been published in Jump Cut, Information, Communication and Society and Capacious (forthcoming)."
+projecttitle: "Racial Wellness and Healing: From BIWOC Feminist Organizations to Racial Trauma 'Experts'"
+projectblurb: "The project I am proposing for the UCSF Digital Health Humanities Program reads contemporary cultural productions by racial wellness experts and healers in relation to self-help guides, pamphlets, zines and newsletters about health and wellness produced by Black Indigenous Women of Color (BIWOC) feminist organizations in the 1980s and 90s. I am interested in the confluences, divergences and parallel developments of these two spaces and modes. I ask both where we can find traces of the language and politics of earlier moments, and what has been reduced or entirely dissolved through the biotechnologization of the body and the institutionalization and incorporation of black feminist frameworks like intersectionality and self care into neoliberal logics. I plan to produce a digital exhibition concurrent to my dissertation that offers an incomplete, polyphonous yet coherent interpretation of transformations over the last thirty years that have changed the terms through which we understand racial trauma, wellness and healing today."
+layout: bio
+---

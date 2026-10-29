@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activity: SUBSTITUTE</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Introduction to Tabular Data and Microsoft Excel</h1>
+
+<h2>Lesson 8: Activity: SUBSTITUTE</h2>
+
+
+<p>&lt;div style=”backsplash”&gt;For this exercise, you will need to download the Excel Learning Workbook.<br /><br /> For this and the following exercises, we will be using the <strong>ConcatenateWorksheet</strong> sheet.&lt;/div&gt;</p>
+
+<p>Let’s return to our workbook. We have an example file name already written in B2. Let’s try to copy that format in B3, using the Cuthburt Wallace citation.</p>
+
+<p>Here is our example output:</p>
+
+<p>Bookbyasma_Smartypants_1905</p>
+
+<p>It looks like it is drawing information from the Title, Author Last, and Date columns, using underscores to separate the categories.[^2]</p>
+
+<p>The output is like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Title]_[Author Last]_[Date]
+</code></pre></div></div>
+
+<p>And it is accomplished through this function:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=CONCATENATE(C3,”_”,E3,”_”,F3)
+</code></pre></div></div>
+
+<p>What happens when you enter that formula into the B3 cell? We get</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>War Surgery of the Abdomen_Wallace_1918
+</code></pre></div></div>
+
+<p>This is a problem for two reasons: 1) Spaces can cause some digital tools to glitch or break, and 2) if we have a book with a very long title, we may have a file name with a similarly long title. Let’s clean that up with two more text editing functions—SUBSTITUTE and LEFT.</p>
+
+<p>First, we are going to use the SUBSTITUTE function to delete any pesky spaces, and then, in the next lesson, we will use the LEFT function to reduce the length of our output string.</p>
+
+<p>The substitute function takes a defined combination of characters, searches within a text-based cell and replaces any matching characters in the <a class="term" href="#string">string</a>
+ with a new combination of characters. This function is written like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    =SUBSTITUTE([cell],”[stringtobesubstituted]”,”[stringreplacingthesubstitutedcharacters]”)
+</code></pre></div></div>
+
+<p>Let’s look at this command in plain grammar. Say you have a sentence, “Aisha left for the store at 8:28am”, but you want to change the name Aisha to Allison. You could write a function that says, reads “look for all instances of ‘Aisha’ and replace them with “Allison”. You would write:</p>
+
+<p>=SUBSTITUTE (“Aisha left for the store at 8:28am”,”Aisha”,”Allison”)</p>
+
+<p>The result of this formula would be</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Allison left for the store at 8:28am.
+</code></pre></div></div>
+
+<p>If we wanted to change the original time, where Aisha leaves at 9:28am instead of 8:28am, we could do a similar function.</p>
+
+<p>=SUBSTITUTE(“Aisha left for the store at 8:28am”,“8”,”9”)</p>
+
+<p>You may notice that the output of this function is wrong: it reads “Aisha left for the store at 9:29am” and not “9:28am”. Rememember, when using the substitute function, it will replace <strong>every instance of the selected string with the new string</strong>. A function like</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=SUBSTITUTE(“Aisha left for the store at 8:28am”,”e”,”x”)
+</code></pre></div></div>
+
+<p>Would output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Aisha lxft for the storx at 8:28am.
+</code></pre></div></div>
+
+<p>We can solve this, in our simple test case in two ways.</p>
+
+<p>We can either be more specific in our find and replace</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=SUBSTITUTE(“Aisha left for the store at 8:28am”,”8:28”,”9:28”)
+</code></pre></div></div>
+
+<p>Or have Excel replace only the first instance, by adding a 1 to our function at the end.</p>
+
+<p>=SUBSTITUTE(“Aisha left for the store at 8:28am”,”8”,”9”,1)</p>
+
+<p>We are going into detail about this function because it is very powerful. We can use substitute to clean text, and we can use it to add or remove information at larger scales within our Excel Files. It is also a little unintuitive, in the same way a lot of other Excel functions can be hard to initially grasp. It is a great test case to learn some of the weird ways Excel is programmed to process information.</p>
+
+<p>With that in mind, let’s use the substitute function to erase spaces in our text. In the I3 cell, type in:</p>
+
+<p>=SUBSTITUTE(C3,” “,””)</p>
+
+<p>In plain English, this command would read. Take text from the C3 cell, look for spaces, and then replace them with nothing.</p>
+
+<p>We get a final result</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WarSurgeryoftheAbdomen
+</code></pre></div></div>
+
+<p>This is still quite long (especially because some books from this period can be dozens of words long), so let’s apply another text function to it, the Left function.</p>
+
+<hr />
+
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/7" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/DB/excel/9" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

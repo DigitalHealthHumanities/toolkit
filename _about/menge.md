@@ -1,0 +1,10 @@
+---
+name: Eana Xuyi Meng
+affiliation: Harvard University
+association: awardee
+headshot: Eana-Xuyi-Meng-663.jpg
+bio: "I am a MD-PhD candidate in the History of Medicine at Harvard University. I have traced the utilization of acupuncture by healthcare practitioners of the civil rights era and their modern legacies in the current opioid epidemic. Primarily, I work closely with Dr. Tolbert Small to document his contributions to medicine and American history. He is the former physician for the Black Panther Party who traveled to China 1972, where he learned about and subsequently incorporated acupuncture into his medical toolkit. I aspire to become a historian of medicine as well as a primary care doctor who practices integrative healthcare."
+projecttitle: "The People’s Doctor: The Archives of Dr. Tolbert Jones Small"
+projectblurb: "Healers are made by those they seek to heal. As such, the physician identity is only made possible by their patients. Gone is the Great Doctor narrative in the history of medicine, but can the individual physician be instead utilized as an analytic lens to understand their broader community – what they collectively cared about, contended with, and endeavored for? In highlighting the life of physician Tolbert Small (b. 1942) in Oakland, California and his expansive archive collected over his lifetime, I aim to recast the Great Doctor narrative. Proximate to and participating in significant events in American history such as the Black Power and civil rights movement, as well as pioneering the integration of acupuncture into healthcare, Small and his archives offer us a revision of what counts as history – meticulously documenting and tending to the lives of known and unknown figures. I aim to create an open and living digital archive platform, from which a biography of Small will spring."
+layout: bio
+---

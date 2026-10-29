@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easier Data Entry: VLOOKUP</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Introduction to Tabular Data and Microsoft Excel</h1>
+
+<h2>Lesson 14: Easier Data Entry: VLOOKUP</h2>
+
+
+<div class="backsplash">For this exercise, you will need to download the Excel Learning Workbook.<br /><br /> For this and the following exercises, we will be using the ReferenceWorksheet2 sheet.</div>
+
+<p>Another way you can use a separate sheet to help with data entry is using the VLOOKUP function. This function allows you to automatically fill information that has been entered elsewhere in your Excel project.</p>
+
+<p>VLOOKUP is both very powerful and also unintuitive, because it requires the information to be setup in a structured way. Most simply, the function looks to a reference array and outputs a text <a class="term" href="#string">string</a>
+ from a cell in the row that has data that matches an input string. We can use data in a reference sheet to autofill corresponding data.</p>
+
+<p>The problem with VLOOKUP is that it requires our data to be very specifically structured: it looks to match the input string in the left-most column in an array, that cell has to have a unique value to all of the other cells in the column, and all of the data we want to copy has to be found in a single column. This means that we can only draw on specific kinds of data in our sheet, and we have to be very careful how we organize that sheet at the start.</p>
+
+<p>Go to the G2 cell in the ReferenceWorksheet2. We will use the VLOOKUP function to automatically fill in information related to the author’s first name.</p>
+
+<p>The VLOOKUP formula works as follows:</p>
+
+<p>&lt;div class=”backsplash”&gt;=VLOOKUP([reference value],[table array that contains the value],[the column number which contains the cell you want to output],[True or False statement for exact matches])&lt;/div&gt;</p>
+
+<p>In more plain English, the formula asks for a reference value (usually a cell), looks for whether that value appears in a separate array, and then outputs the value of the cell in the selected column and the same row of the cell that matches the reference value. It is complicated, so we should just tinker with it some.</p>
+
+<p>Go to the G2 cell in the ReferenceWorksheet2 sheet. This whole column is blank, so we will auto populate the column, with the VLOOKUP function using data from columns C, D and E in the DataforRW2 sheet.</p>
+
+<p>For this example, we are going to use an author’s last to autofill the author’s first name in the sheet. Here is the VLOOKUP command for G2:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=VLOOKUP(F2,DataForRW2!D2:E5,2,FALSE)
+</code></pre></div></div>
+
+<p>In plain English the command reads: find the value in F2 in the first column in the data array (D2:E5), and if there is a row with the exact F2 value output the value of found in the same row as the matching value and the second column of the array.</p>
+
+<p>If we do the drag and copy function, this formula will break, so we will need to freeze some of the elements.</p>
+
+<p>Here is the best formula to drag and copy the formula.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=VLOOKUP(F2,DataForRW2!D$2:E$5,2,FALSE)
+</code></pre></div></div>
+
+<p>One of the great things about VLOOKUP is that once the formula is in place, you can change values in the reference cell and it will catch up. So if you type “Hrdlicka” in F2, the G2 output will automatically change to “Ales”.</p>
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/13" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/DB/excel/15" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

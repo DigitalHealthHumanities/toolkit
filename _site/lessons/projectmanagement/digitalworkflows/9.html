@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research Protocols</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Digital Workflows</h1>
+
+<h2>Lesson 9: Research Protocols</h2>
+
+
+<p>As you work on a prototype it is incredibly important to develop a <a class="term" href="#protocol">protocol</a>
+ for your method as you develop it. The sciences tend to define and use extremely rigid protocols to help with reproducibility in their work. The humanities can apply research protocols for a more mundane reason: sometimes we go weeks or months between having time to work on our projects. Protocols can help us remember how exactly we want to be working with a tool or program.</p>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Protocol</p>
+        <p>A protocol is a step by step guide for how to use a tool or process information during a research project.</p>
+    </div>
+</div>
+
+<p>Developing protocols is an important part of the <a class="term" href="#prototype">prototype</a>
+ phase. When you are developing prototypes for your research project, you are working with different tools, learning about how they function, and parsing out how they interface with the larger research program. Formalizing the process in the form of a protocol is a way to concretely document your digital method. This documentation serves multiple uses, including:</p>
+<ul>
+  <li>Helping keep your research consistent over a months or years-long research project.</li>
+  <li>Assisting with writing methods sections in academic publications.</li>
+  <li>Giving strong evidence to the project’s development when applying for internal and external grant funding.</li>
+</ul>
+
+<p>What does a humanistic protocol look like? Unlike the sciences, which require rigid protocols to enable reproducibility, humanists can develop protocols based on their needs. Here are a few examples:</p>
+<ul>
+  <li>You are working on a computational textual analysis project using AntConc, and you add a set of notes pertaining to the settings and stopwords.</li>
+  <li>You are creating a dataset with the help of undergraduate data entry specialists. You need to create guidelines for data entry to help them stay consistent. (<a href="https://tuberculosisspecimen.github.io/diss/dissertation/X_1_2">Here is an example, from the author’s scholarship</a>.)</li>
+  <li>You want to teach using ArcGIS, so you are taking notes as you work to better develop a lesson plan later.</li>
+</ul>
+
+<p>A protocol can be as detailed as describing every step to export a file in a specific format, to a series of simple command-line entries for batch exporting file names. The goal is to document enough stuff so that, if you are working by yourself, you can return to the research process quickly, and that, if you are working with a team, you can onboard your team with as little friction as possible. Humanists, mostly, do not have to worry as much about reproducibility. Because of this, we do not have to fit any concrete guidelines; instead, we can focus on what fits our professional and practical needs.</p>
+
+<p>Let’s break down a protocol in a similar fashion as the workflow from the previous section. We are going to break down a protocol for two different processes. First, is what we will call <a class="term" href="#transformative-processes">transformative processes</a>
+, and second is what we will call <a class="term" href="#analytical-processes">analytical processes</a>
+. Transformative processes refer to the tools that change the medium or file type without directly altering the materials. Scanning a book and creating a .pdf file is a transformation. Analytical processes refer to the use of tools to create arguments or findings using those tools. Using Voyant on a .pdf file to find commonly used words would be an analytical process.</p>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Transformative Processes</p>
+        <p>This concept refers to the moments when scholars need to change the medium, platform, or file type of their analytical materials. This can be a transformation from analog to digital (scanning a phyisical book) to make it legible for digital tools or a transformation of one file type to another (changing an image from .png to .jpg) to make it easier to display online.</p>
+    </div>
+</div>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Analytical Processes</p>
+        <p>’Analytical Processes’ more openly describes the ways digital tools are used to assist in meaning and argument making in your research.</p>
+    </div>
+</div>
+
+<p>For Transformative Processes Ask:</p>
+
+<ul>
+  <li>What do I need to do to get from medium A to medium B?</li>
+  <li>What are the physical or medium-based limitations of my source?</li>
+  <li>What tool am I using to change the source from one medium to another? Why am I using it?</li>
+  <li>What is the final result I need? Why do I need it?</li>
+</ul>
+
+<p>Once you answer these questions, try to go into detail listing out a step-by-step description of the process. Be as detailed as you think is prudent. Sometimes this can be: “Click the import button and navigate to the file” or it can be “The scanner is finicky, so be sure to carefully line up the page to the upper left hand corner”.</p>
+
+<p>For Analytical Processes Ask:</p>
+
+<ul>
+  <li>What tool am I using to analyze the material? Why?</li>
+  <li>What medium or file format does this tool use? Do I need to convert it?</li>
+  <li>How do I turn the program on?</li>
+  <li>How do I bring data into the program?</li>
+  <li>What am I trying to answer?</li>
+  <li>How does this tool answer my questions?</li>
+  <li>How do you intend to use this tool to make your argument?</li>
+</ul>
+
+<p>Once you have listed this out, go into detail listing out the process of using this tool to analyze an object or collection of data. Be as detailed as you think is prudent. It can be as specific “include <em>this specific list of stop words</em>” or “Press enter and look at the results”.</p>
+
+<h3>Protocols are Living Documents</h3>
+
+<p>One thing to remember is that as you are developing a prototype, you may be adjusting your process as you work. Part of the prototype phase is to experiment, thinking through all of the nitty gritty details associated with the research project. You may have to revise the protocol as you work, as you adopt different or new tools for your research project, or as your project shifts to meet new research goals.</p>
+
+<p><strong>It is okay for your research project to change over time.</strong></p>
+
+<p>As you become more familiar with a tool, as your project grows, as you grow as a scholar, your project might shift and change. That is a sign of development as a scholar and researcher. What is important is to document those shifts.</p>
+
+<p>When you do adjust your protocols it can be important to version your protocols (labelling them with a date, or keeping old versions in a scratch document) because your previous work might be relevant later in the research. These changes, and your protocols themselves, can be valuable for other scholars, and can be the basis of published methods-focused research essays or presentations.</p>
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/projectmanagement/digitalworkflows/8" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/projectmanagement" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/projectmanagement/digitalworkflows/10" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

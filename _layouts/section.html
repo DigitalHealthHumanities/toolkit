@@ -1,0 +1,25 @@
+---
+layout: default
+format: section
+---
+
+<h1>{{ page.title }}</h1>
+
+{% assign lessongroups = site.lessons | where: "layout", "lessongroup" %}
+{% assign lessons = site.lessons | where: "layout", "lesson" %}
+<ul class="list-group-flush">
+    {% for group in lessongroups %}
+    <li class="list-group-item">
+        <h2><a href="{{ site.baseurl }}{{ group.permalink }}">{{ group.title }}</a></h2>
+    </li>
+    <ul class="list-group-flush">
+        {% for lesson in lessons %}
+        {% if lesson.group == group.group %}
+        <li class="list-group-item">
+            <p><a href="{{ site.baseurl }}{{ lesson.permalink }}"><strong>{{ lesson.title }}</strong></a></p><p>{{ lesson.abstract }}</p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</ul>

@@ -1,0 +1,30 @@
+main:
+- authorlookup: spurcell
+  name: Sean Purcell
+  affiliation: University of California San Francisco
+  title: Digital Health Humanities Program
+  association: lead
+  bio: Sean Purcell is a digital humanist, medical historian, and thanatologist. He completed his PhD at Indiana University's Media School, and his dissertation, <a href="https://tuberculosisspecimen.github.io/diss/index"><i>The Tuberculosis Specimen</i></a>, covered the ethical problems of doing research in the history of medicine. His work has been published in <i>In the Library with the Lead Pipe</i> and <i>Game Studies</i>
+  headshot:
+  github:
+  
+- authorlookup: pilieva
+  name: Polina Ilieva
+  affiliation: University of California San Francisco
+  association: lead
+  bio:
+  headshot:
+  
+- authorlookup: cagostini
+  name: Caterina Agostini
+  affiliation: Indiana University
+  association: consultant
+  bio:
+  headshot:
+  
+- authorlookup: velias
+  name: Vanessa Elias
+  affiliation: University of Texas San Antonio
+  association: consultant
+  headshot: n/a
+  

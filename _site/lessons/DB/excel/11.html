@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cross Referencing Data: COUNTIF</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Introduction to Tabular Data and Microsoft Excel</h1>
+
+<h2>Lesson 11: Cross Referencing Data: COUNTIF</h2>
+
+
+<div class="backsplash">For this exercise, you will need to download the Excel Learning Workbook.<br /><br /> For this and the following exercises, we will be using the ReferenceWorksheet1 sheet.</div>
+
+<p>Now that we have learned the UNIQUE function, let’s try using that information to analyze the material in the ReferenceWorksheet1 sheet, using the COUNTIF function.</p>
+
+<p>COUNTIF looks at a range of cells and counts whether those cells contain <a class="term" href="#string">string</a>
+ of text that match a reference cell or string. It is written like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=countif([cellrange],[criteria])
+</code></pre></div></div>
+
+<p>Write, in the blank spreadsheet you used for the previous lesson on the UNIQUE function, this formula in cell B1:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=countif(ReferenceWorksheet1!C2:C418,A1)
+</code></pre></div></div>
+
+<p>This formula instructs Excel to do is as follows: Count the amount of times the string in cell A1 occurs in the cells C2 through C418 on ReferenceWorksheet1.</p>
+
+<p>We can drag this formula down from B1 to B4.</p>
+
+<p>There is one problem. As you drag the formula down, it will change all numbers in that formula by 1 for every cell it moves down. So B2 reads,</p>
+
+<p>=COUNTIF(ReferenceWorksheet1!C3:C419,A2)</p>
+
+<p>This is a problem because now we are having Excel look to the wrong cell range (we want it to read “C2:C418”). When we drag a cell down to copy the formula into the cell below it, Excel is doing a quick bit of math to replicate the formula to match that drag: it takes any cell reference and adds 1. So our “C2:C418” reference in B1 becomes “C3:C419” in B2.  If you drag the formula down from B1 to B10, the cell would read</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> =COUNTIF(ReferenceWorksheet1!C11:C427,A10)
+</code></pre></div></div>
+
+<p>and the more I drag it down, the more out of sync with my data it will be come.</p>
+
+<p>&lt;div style=”backsplash”&gt;This will also happen if we drag a formula left or right, but instead of adding a number, it will adjust it one letter designation, from A to B to C and so on.&lt;/div&gt;</p>
+
+<p>What we need to do is freeze part of the coordinates equation, while keeping other coordinates in the equation transformable. To do this, we are going to use the “$” symbol in our function ahead of the coordinate we want to freeze. This equation, which we want to adjust to follow the data in the A column, we would be written as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=COUNTIF(ReferenceWorksheet1!C$2:C$418,A1)
+</code></pre></div></div>
+
+<p>The “$” symbol is being written on the number coordinates in the array we are referencing in the other sheet. In our function above it is written as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ColumnLetter]$[RowNumber]
+</code></pre></div></div>
+
+<p>The $ will freeze the number or letter that directly follows it, so when you copy it into other cells, it will keep that number the same.</p>
+
+<p>Let’s try incorporating the UNIQUE and COUNTIF functions together. Try using the UNIQUE Function to create a list of unique “Publication Types” in the ReferenceWorksheet1 sheet, and then try creating a COUNTIF function to count those results.</p>
+
+<div class="accordion mb-2" id="spoiler-">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer-" aria-expanded="true" aria-controls="collapseOne">
+                Spoiler! Check Your Work
+            </button>
+        </h2>
+        <div id="answer-" class="accordion-collapse collapse" aria-labelledby="spoiler-" data-bs-parent="#spoiler-">
+            <div class="accordion-body">
+                
+                    <img src="/toolkit/assets/img/Excel23.jpg" class="example-img" alt="A screenshot from Excel. '=UNIQUE(ReferenceWorksheet1!C:C)' is in the cell entry area, and column A and B have categories and the counts of those categories in the referenced worksheet: 'X-Ray' has '65' counts, 'Illustration' has '105' counts, 'Photograph' has '233' counts, and 'Graphic' has '14' counts. Column C and D also have counts of categories from the referenced sheet: 'Article' has '94' counts, 'Monograph' has '304' counts, and 'Pamphlet' has '19' counts." />
+                    <p class="caption"></p>
+                
+                
+                    <p>Here are the functions we used. In C1:<br /><code>=UNIQUE(ReferenceWorksheet1!I2:I418)</code><br />In D1:<br /><code>=COUNTIF(ReferenceWorksheet1!I$2:I$418,C1)</code></p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/10" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/DB/excel/12" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

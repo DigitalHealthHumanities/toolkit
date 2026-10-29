@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activity: CONCATENATE</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Introduction to Tabular Data and Microsoft Excel</h1>
+
+<h2>Lesson 7: Activity: CONCATENATE</h2>
+
+
+<p>&lt;div “backsplash”&gt;For this exercise, you will need to download the Excel Learning Workbook.<br /><br /></p>
+
+<p>For this and the following exercises, we will be using the <strong>ConcatenateWorksheet</strong> sheet.&lt;/div&gt;</p>
+
+<p>We will first learn about the CONCATENATE function by practicing how it can be used with citation information.</p>
+
+<p>We have included three .pdf files and three .txt from HathiTrust. These are scans of books originally owned by the University of California and are related to military medicine. I have not revised these documents, and what you should notice is that the way HathiTrust automatically names the files makes it very difficult to work with. Based on the naming system, it would be difficult to know what is inside the file.</p>
+
+<p>Let’s work with one of these files and input the information as we might for a citation manager. Let’s open uc2-ark–13960-t9n29rj7x-1735936292.pdf</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Excel9.jpg" class="img-fluid" alt="The cover page of Cuthburt Wallace’s 'War Surgery of the Abdomen', published by P. Blakiston's Son &amp; Co. In Philadelphia in 1918." />
+    <p class="caption">This is an example publication we can use to test our concatenate skills. We will need citation information—metadata pertaining to the author, title, year and publisher—and we will need to enter and transform that data.</p>
+</div>
+
+<p>If we wanted to use Excel to generate citation data from this page, we would first need to enter the data in a structured form: We would need to fill out information pertaining to the author, book title, publisher, and publication date. We would have this information:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Author (Last)</td>
+      <td>Author (First)</td>
+      <td>Title</td>
+      <td>Publisher</td>
+      <td>Location</td>
+      <td>Year</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Wallace</td>
+      <td>Cuthbert</td>
+      <td>War Surgery of the Absomen</td>
+      <td>P. Blakiston’s Son &amp; Co.</td>
+      <td>Philadelphia</td>
+      <td>1918</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>With this information in Excel, we can use the program structure to translate it in particular ways.</p>
+
+<p>We could have the program output a citation, by aligning the provided text in a predefined structure.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Author (Last)], [Author (First)].[Title].[Location]: [Publisher], [Year]. 
+</code></pre></div></div>
+
+<p>This is what a citation manager does under the hood with the data you input into it (<a href="digitalhealthhumanitities.github.io/toolkit/lessons/DB/excel/1">which we discussed in a previous lesson</a>).</p>
+
+<p>What we will learn in this lesson is a function used to connect text <a class="term" href="#strings">strings</a>
+ together using Excel. This function is called CONCATENATE. This function takes text data from selected cells and combines them together into a single cell.</p>
+
+<p>In the practice workbook, turn to the <strong>Concatenate Worksheet</strong> sheet, and go to cell H3.</p>
+
+<p>This worksheet has some simplified citation data, which we will use to eventually generate a file identifier generator for renaming sources collected from HathiTrust.</p>
+
+<p>The CONCATENATE function connects cells together in the order that it is expressed in the formula. It can also be used to add new strings of text, that you define in the formula that are demarcated by quotation marks “ “.</p>
+
+<p>It is easier to explain this function by practicing it, so try a simple concatenate in the H3 cell. Write,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=concatenate(D3,E3) 
+</code></pre></div></div>
+
+<p>You should get this output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CuthbertWallace 
+</code></pre></div></div>
+
+<p>Concatenate copies the contents of cells which are defined in the formula, and connects them together in the order in which they were written. There is a problem here: what if we need a space? We will have to write the space into the formula, using quotation marks (“) as a way to <a class="term" href="#escape">escape</a>
+ the written text from the formula.</p>
+
+<div class="mx-auto card col-md-8 col-lg-6 mb-3">
+    <div class="card-body dhht-definition">
+        <p class="term">Escape</p>
+        <p>This term, ‘escape’, refers to writing text into a programmatic space that is not read by the computer as directions. Different programming languages have ways to demarcate escapes, often using quotation marks or apostrophes.</p>
+    </div>
+</div>
+
+<p>Important Term: Escaping Text – This term, “escape”, refers to writing text into a programatic space that is not read by the computer as directions. Different programming languages have ways to demarcate escapes, often using quotation marks (“) or apostrophes (‘).</p>
+
+<p>The concept of <strong>escaping</strong> text is important. Escaping lets us add unique strings into our code without breaking the function and causing Excel to have an error. For the CONCATENATE function, an escaped string of text allows you to add additional text to the final cell, but in other functions, you can use escaped strings to define variables that the program will look for.</p>
+
+<p>Let’s try experimenting with escapes using our simple concatenate function.</p>
+
+<p>In the I3 cell, next to H3, write this function:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=concatenate(D3,E3,F3) 
+</code></pre></div></div>
+
+<p>In the J3 cell, write this function:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=concatenate(D3,E3,"F3") 
+</code></pre></div></div>
+
+<p>In I3, the concatenate function conjoins information from each of the referenced cells “CuthburtWallace1918”, and in J3, the escaped text—demarcated with quotation marks (“)–is left as it is written, “CuthburtWallaceF3”.</p>
+
+<p>If we want to create a space in our concatenate function in H3, we will have to add this text as an escaped string in the function. Write the following</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=concatenate(D3," “,F3) 
+</code></pre></div></div>
+
+<p>You’ll notice that the escaped text is just a single space. (This can become confusing when writing long concatenate functions, because we are often not taught to think about how spaces fill our documents.)</p>
+
+<p>You should get this output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cuthbert Wallace 
+</code></pre></div></div>
+
+<p>You can enter any string of text as its own item in the concatenate formula as long as you define it as a unique thing with the first comma, escape it with quotation marks, and finish it with a second comma. (A note for any final variable or string is that you do not need the last comma.)</p>
+
+<p>I can use concatenate to write a simple formulated sentence.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=CONCATENATE(C3," was written by ",D3," ",E3," in in",F3,".")  
+</code></pre></div></div>
+
+<p>And it outputs</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> War Surgery of the Abdomen was written by Cuthbert Wallace in 1918. 
+</code></pre></div></div>
+
+<p>This is not the most helpful function, but say we wanted to generate a works cited like the one we described above. (Albeit without formatting like italics.) We can do that. Borrowing the Chicago Manual of Style format described in the first lesson,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Author First] [Author Last]. [Book Title]. [Place]: [Publisher], [Year]. 
+</code></pre></div></div>
+
+<p>We can write a concatenate function to generate that. Try making a citation in this format using concatenate in the H3 cell.</p>
+
+<div class="accordion mb-2" id="spoiler-">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer-" aria-expanded="true" aria-controls="collapseOne">
+                Spoiler! Check Your Work
+            </button>
+        </h2>
+        <div id="answer-" class="accordion-collapse collapse" aria-labelledby="spoiler-" data-bs-parent="#spoiler-">
+            <div class="accordion-body">
+                
+                
+                    <p>Here is the answer: <br /> <code>=CONCATENATE(D3,' ',E3,'. ',C3,'. ',H3,': ',G3,', ',F3,'.')</code><br />Which generates:<br /><code>Cuthbert Wallace. War Surgery of the Abdomen. Philadelphia: P. Blakiston's Son &amp; Co., 1918. </code></p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>The goal with this exercise is to think about the ways a preformatted concatenate function can be used to generate information that is in a standardized format, like a citation. This is imperfect, because often for citations, we need to include italics or other formatting, and if you are working with co-authored sources a simple concatenate function like this one would cause issues.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>We scaffolded this lesson around citation managers to show how we can automate these functions in a context you may already be familiar. Now, we are going to turn it around to show a different use for a function like concatenate: to automatically generate file names.</p>
+
+<p>Generating file names can be important for digital research, because digital humanists will often be working in larger scales than a traditional humanist might be. Instead of reading a few dozen books for a research project, a digital humanist might be analyzing hundreds or thousands of sources. As your resources become more numerous, it can be important to have a consistent naming system, making it easier to find specific files, or know what file is being analyzed by a tool or program from a single glance. Concatenate allows us to create uniform file names, based on the metadata.</p>
+
+<p>Over the next three sections, we will learn a few more text-based functions that we can use in Excel to transform text to create simple, clean and short file names using textual metadata.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>There is a solution for this in Microsoft Excel, but it would require complex Boolean (if/then) logic. While that might be interesting to build, there are so many free, useful citation managers already, that it would be a waste of time to do so. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/DB/excel/6" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/databasics" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/DB/excel/8" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>

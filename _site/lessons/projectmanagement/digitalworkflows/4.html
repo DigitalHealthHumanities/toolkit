@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activity: Incorporating Digital Tools to Research Workflows</title>
+
+    <!-- Importing Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Importing Custom CSS -->
+    <link rel='stylesheet' href="http://localhost:4000/toolkit/assets/styles.css" />
+
+    <!-- Importing Banner (UCSF) CSS -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/toolkit/assets/banner/banners.css">
+
+    <!-- Importing Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <noscript>
+        <p>Please enable JavaScript in your browser.</p>
+    </noscript>
+</head>
+
+<body>
+    <div id="ucsf-banner-nav" class="no-logo">
+    <div class="top-header-container row">
+        <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="http://localhost:4000/toolkit/" title='Home'>
+            Digital Health Humanities Toolkit
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/about'>About</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item dropdown'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-lessons-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            Lessons
+                        </button>
+                        <div class='dropdown-menu' aria-labelledby='dhht-lessons-dropdown'>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons'>All Lessons</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/intro'>DH Crash Course</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/databasics'>Digital Basics</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/ProjectManagement'>Project Management</a>
+                            
+                                <a class='dropdown-item' href='http://localhost:4000/toolkit/lessons/dataethics'>Data Ethics</a>
+                            
+                        </div>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/white-paper'>White Paper</a>
+                    </li>
+                    
+                
+                    
+                    <li class='nav-item'>
+                        <a class='nav-link' href='http://localhost:4000/toolkit/resources'>Resources</a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid dhht-container d-flex flex-column">
+        <h1>Digital Workflows</h1>
+
+<h2>Lesson 4: Activity: Incorporating Digital Tools to Research Workflows</h2>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <p>For our lesson on network graphs and Gephi, we taught learners how to import data from a Microsoft Excel export (a .csv file) directly to Gephi. We did this for two reasons: 1) we wanted to focus on the data categories required to make Gephi operate, and 2) we wanted to lay a foundation about how workflows can function in digital research.</p>
+
+<p>For many digital tools, especially open-source ones, it can be easier and quicker to develop a dataset outside that tool before importing it later in the process. While these tools often have an interface for data entry, they can be clunkier or slower than just working from a tabular data platform like Microsoft Excel or Google Sheets.</p>
+
+<p>The workflow we used in that Gephi lesson involved the creation of a pair of comma separated value (.csv) spreadsheets, which would be imported into Gephi when the network needed to be generated.</p>
+
+<p>For this lesson, we will begin to think about how a multi-step data process interfaces with traditional, written research. The goal of this lesson is to show how the processes of entering data and digital tools links up with other practices associated with research.</p>
+
+<p>For this hands-on activity, we will begin to link multi-step digital processes with the print-centered workflows we generated in <a href="https://digitalhealthhumanities.github.io/toolkit/lessons/projectmanagement/digitalworkflows/3">the last lesson</a>. Like in that lesson, we will be asking you to draw out workflow graphs either on a piece of scratch paper, or on a digital platform like Microsoft Whiteboard.</p>
+
+<p>The Gephi workflow we outlined above would look something like this:</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Workflow_Revised2.JPG" class="img-fluid" alt="A simple workflow showing how a .csv file is imported into Gephi and exported as an image file for publication. The 'Comma Separated Value File' box points to the 'Gephi' box. The 'Gephi' box points to 'Image File'." />
+    <p class="caption">A simple workflow showing how a .csv file is imported into Gephi and exported as an image file for publication.</p>
+</div>
+
+<p>How would this link into a workflow for a print based journal?</p>
+
+<p>We would have to think through a few important questions: if we are going to display our network graph in a non-interactive, non-digital format, how will we make it legible on the page? What format would we need to export to do that? And where would that link into the workflow we developed in the previous lesson?</p>
+
+<div class="example-img">
+    <img src="/toolkit/assets/img/Workflow_Revised1.JPG" class="img-fluid" alt=" A workflow sketch showing a simple diagram of what is needed for a journal submission. 'Citation Manager' and 'Image Editor' have arrows pointing to 'Word Processor'. Both 'Word Processor' and 'Image Editor' have arrows pointing to 'Final Submission'." />
+    <p class="caption">This is the workflow we sketched in the previous lesson, outlining how a few simple programs might be used in an article submission to a print-first scholarly journal.</p>
+</div>
+
+<p>Try to draw this Gephi workflow into the workflow you sketched out in the previous lesson (shown above). When you are done, you can check it against our workflow graph.</p>
+
+<div class="accordion mb-2" id="spoiler-">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer-" aria-expanded="true" aria-controls="collapseOne">
+                Spoiler! Check Your Work
+            </button>
+        </h2>
+        <div id="answer-" class="accordion-collapse collapse" aria-labelledby="spoiler-" data-bs-parent="#spoiler-">
+            <div class="accordion-body">
+                
+                    <img src="/toolkit/assets/img/Workflow_Revised3.JPG" class="example-img" alt=" A larger workflow from above. 'Citation Manager' and 'Image Editor' have arrows pointing to 'Word Processor'. Both 'Word Processor' and 'Image Editor' have arrows pointing to 'Final Submission'. The Gephi workflow—'Comma Separated Value File' connecting to 'Gephi' connecting to 'Image File' is continued, with 'Image File' connecting to 'Image Editor.'" />
+                    <p class="caption"></p>
+                
+                
+                    <p>As it is sketched out here, Gephi is being used to generate an image of the network graph, which can be edited in an image editor like Adobe Photoshop or GIMP. The reason this program outputs an image file is because of the limitations of a print-based medium, where the data assembled in a tool like Gephi is difficult or impossible to comprehend if it is written out on a page, or series of pages.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>Now that we have a sense of how Gephi is exporting data for our written, we should ask, how exactly do we enter and shape the data in such a manner so that it can be read by the network graphing platform?</p>
+
+<p>As we learned in the introduction to Microsoft Excel, it is not feasible to handwrite .csv files. Instead we’ll need a spreadsheet software, like Microsoft Excel, from which we’ll export. We also will need to be working with some sort of data, but we are going to ignore that part of the workflow for right now. (We will address that issue in more detail in the next section.)</p>
+
+<p>Add Microsoft Excel to your sketched workflow. It should connect to Gephi in some way, but it might also connect elsewhere in the workflow. If you come from a quantitative field, or plan to include quantitative data in the form of charts or graphs, be sure to include an “Exported Figures” box.</p>
+
+<p>Once you have done that, check it against this workflow.</p>
+
+<div class="accordion mb-2" id="spoiler-">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer-" aria-expanded="true" aria-controls="collapseOne">
+                Spoiler! Check Your Work
+            </button>
+        </h2>
+        <div id="answer-" class="accordion-collapse collapse" aria-labelledby="spoiler-" data-bs-parent="#spoiler-">
+            <div class="accordion-body">
+                
+                    <img src="/toolkit/assets/img/Workflow_Revised4.JPG" class="example-img" alt="A larger workflow from above. 'Citation Manager' and 'Image Editor' have arrows pointing to 'Word Processor'. Both 'Word Processor' and 'Image Editor' have arrows pointing to 'Final Submission'. The Gephi workflow—'Comma Separated Value File' connecting to 'Gephi' connecting to 'Image File' is continued, with 'Image File' connecting to 'Image Editor.' A new box, 'Spreadsheet Software' points to the 'Comma Separated Value' box, and the new 'Exported Figures' box. 'Exported Figures' connects to 'Word Processor'." />
+                    <p class="caption"></p>
+                
+                
+                    <p>The spreadsheet software exports a 'Comma Separated Value (.csv) File' and 'Exported Figures'. The .csv file goes to Gephi, where the Exported Figures (most likely copied and pasted directly from the spreadsheet itself) points to the 'Word Processor'.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>The next session will continue to grow this workflow diagram to include primary data, archival sources, or unformatted materials.</p>
+
+<p>We will ask: Where are we getting our primary data?  How are we processing our data? How are we getting it into the right form for Gephi to read it?</p>
+
+    </div>
+    <div class="col-md-4">
+        <div class="mx-auto card">
+    <div class="card-body dhht-definition">
+        <h3>Key Terms</h3>
+        
+        <hr />
+        <p class="term" id="workflow">Workflow</p>
+        <p>A workflow describes the progression of physical and digital objects as they are processed using digital tools or practical methods. Developing workflows helps scholars more easily process their data, primary materials, or secondary sources in support of their argument.</p>
+        
+        <hr />
+        <p class="term" id="network-graph">Network Graph</p>
+        <p>Digital Humanities researchers use network graphs to examine the connections and relations between objects, people, and concepts. Network graphs illustrate and weight these connections in clusters generated by the amount of connections (edges) between different people, places, things and ideas (nodes).</p>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+Lesson by: 
+
+
+
+
+
+Sean Purcell, University of California San Francisco<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+<div class="justify-content-center btn-group row mt-2">
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+                <a href="/toolkit/lessons/projectmanagement/digitalworkflows/3" class="btn btn-primary" role="button">Previous</a>.
+            </div>
+             
+    
+    <div class="col col-md-3 col-lg-2 btn-group">
+        <a href="/toolkit/lessons/projectmanagement" class="btn btn-success" role="button">Lesson Group</a>
+    </div>
+    
+        
+            <div class="col col-md-3 col-lg-2 btn-group">
+            <a href="/toolkit/lessons/projectmanagement/digitalworkflows/5" class="btn btn-primary" role="button">Next</a>.
+            </div>
+        
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+    <navbar id='dhht-footer' class='page-footer dhht-navbar-default container-fluid'>
+    <p class="nav-item">The Digital Health Humanities Toolkit was developed at
+        the University of Californa San Francisco thanks to a grant from the National Endowment for the Humanities.</p>
+    
+        <a href="https://github.com/DigitalHealthHumanities/toolkit" class="nav-item">GitHub</a>
+    
+</navbar>
+
+</body>
+
+</html>
