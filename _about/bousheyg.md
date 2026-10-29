@@ -1,5 +1,5 @@
 ---
-name: Cristin Kearns
+name: Geoffrey Boushey
 affiliation: University of California San Francisco
 title: Computational and Research Data Science Specialist
 association: instructor
