@@ -3,7 +3,7 @@ layout: sublesson
 structurehead: workflows
 lessontitle: "Digital Workflows"
 title: "Prototyping"
-group: projectmanagement
+group: ProjectManagement
 abstract: "This lesson outlines the concepts behind prototyping in the digital humanities." 
 lessonnumber: 7
 lessonprint: 7
