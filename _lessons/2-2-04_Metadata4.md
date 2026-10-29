@@ -1,7 +1,7 @@
 ---
 layout: sublesson
 structurehead: metadata
-group: projectmanagement
+group: ProjectManagement
 nest: nonest
 lessontitle: "Metadata: A Quick Introduction"
 title: "Activity: Controlling Your Vocabulary"
