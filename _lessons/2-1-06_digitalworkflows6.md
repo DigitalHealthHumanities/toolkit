@@ -3,7 +3,7 @@ layout: sublesson
 structurehead: workflows
 lessontitle: "Digital Workflows"
 title: "Activity: Building Complex Workflows"
-group: projectmanagement
+group: ProjectManagement
 abstract: "In this lesson, students will think through the step-by-step process of incorporating archival materials in a digital humanities project, looking at how different programs are used to transform data into useable forms." 
 lessonnumber: 6
 lessonprint: 6
