@@ -10,7 +10,6 @@ lessonnumber: 7
 lessonprint: 7
 permalink: "/lessons/intro/LowCode/7"
 previouslesson: "/lessons/intro/LowCode/6"
-nextlesson: "/lessons/intro/LowCode/8"
 authors: velias
 ---
 
