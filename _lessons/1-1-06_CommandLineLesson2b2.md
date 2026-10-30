@@ -11,6 +11,7 @@ lessonprint: 3
 permalink: /lessons/databasics/commandline/3
 previouslesson: /lessons/databasics/commandline/2
 nextlesson: /lessons/databasics/commandline/4
+authors: spurcell
 split: none
 ---
 **A Note: This lesson is currently formatted for PC ONLY. A Mac Version will be added to the site soon.**
