@@ -11,7 +11,7 @@ lessonprint: 3
 permalink: /lessons/DB/dhhethics/3
 nest: nonest
 nextlesson: /lessons/DB/dhhethics/4
-previouslesson: /lessons/projectmanagement/digitalworkflows/2
+previouslesson: /lessons/DB/dhhethics/2
 split: none
 authors: spurcell
 ---
