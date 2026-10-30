@@ -10,6 +10,7 @@ lessonprint: 1
 firstlesson: "true"
 permalink: /lessons/projectmanagement/digitalworkflows/1
 nextlesson: /lessons/projectmanagement/digitalworkflows/2
+authors: spurcell
 split: none
 nest: nonest
 ---
