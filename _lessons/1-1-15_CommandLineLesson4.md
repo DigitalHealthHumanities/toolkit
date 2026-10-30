@@ -10,7 +10,7 @@ lessonnumber: 8
 lessonprint: 8
 permalink: /lessons/databasics/commandline/8
 previouslesson: /lessons/databasics/commandline/7
-nextlesson: /lessons/databasics/commandline/8
+authors: spurcell
 ---
 
 **A Note: This lesson is currently formatted for PC ONLY. A Mac Version will be added to the site soon.**
