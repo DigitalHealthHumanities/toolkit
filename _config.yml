@@ -53,7 +53,9 @@ menu:
 
 footer:
   links:
-    - label: 'GitHub'
+    - label: 'NEH'
+      link: 'https://www.neh.gov/'
+   - label: 'GitHub'
       link: 'https://github.com/DigitalHealthHumanities/toolkit'
 
 # ---------------------------------------------------------------
