@@ -6,7 +6,7 @@ title: Digital Health Humanities Toolkit
 
 <p>{{ site.description }}</p>
 
-<p>Read the <a href="{{ site.baseurl }}/white-paper">White Paper</a></p>
+<p>Read the <a href="https://escholarship.org/uc/item/9kt9c6hd">White Paper</a></p>
 
 {% assign sublessons = site.lessons | where: "layout", "sublesson" %}
 {% assign introlessons = sublessons | where: "crashcourse", "yes" %}
