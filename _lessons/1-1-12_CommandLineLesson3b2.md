@@ -12,6 +12,7 @@ permalink: /lessons/databasics/commandline/5
 previouslesson: /lessons/databasics/commandline/4
 nextlesson: /lessons/databasics/commandline/6
 split: none
+authors: spurcell
 ---
 
 This simple function can be helpful in parsing large numbers of text files for specific information. The dataset we’re using in this exercise comes from a larger collection of books—a corpus—which have information about a range of issues related to tuberculosis around the turn of the twentieth century. 
