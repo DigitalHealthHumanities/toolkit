@@ -12,6 +12,7 @@ permalink: /lessons/databasics/commandline/4
 previouslesson: /lessons/databasics/commandline/3
 nextlesson: /lessons/databasics/commandline/5
 split: none
+authors: spurcell
 ---
 
 **A Note: This lesson is currently formatted for PC ONLY. A Mac Version will be added to the site soon.**
