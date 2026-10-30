@@ -1,7 +1,7 @@
 ---
 layout: sublesson
 structurehead: metadata
-group: ProjectManagement
+group: projectmanagement
 nest: nonest
 firstlesson: "true"
 lessontitle: "Metadata: A Quick Introduction"
