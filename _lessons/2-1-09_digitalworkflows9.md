@@ -3,7 +3,7 @@ layout: sublesson
 structurehead: workflows
 lessontitle: "Digital Workflows"
 title: "Research Protocols"
-group: ProjectManagement
+group: projectmanagement
 abstract: "This lesson teaches how establishing and documenting protocols can assist in the development of prototype workflows." 
 lessonnumber: 9
 lessonprint: 9
