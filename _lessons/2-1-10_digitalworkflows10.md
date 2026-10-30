@@ -2,7 +2,7 @@
 layout: sublesson
 structurehead: workflows
 lessontitle: "Digital Workflows"
-title: "Sythesis: Why Workflows Matter in Digital Humanities Research"
+title: "Synthesis: Why Workflows Matter in Digital Humanities Research"
 group: projectmanagement
 abstract: "A concluding lesson in which students will learn how workflows can help structure their research, and how the ideas learned in this module will help save them time over the course of multi-year research projects." 
 lessonnumber: 10
