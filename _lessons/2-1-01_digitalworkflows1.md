@@ -3,7 +3,7 @@ layout: sublesson
 structurehead: workflows
 lessontitle: "Digital Workflows"
 title: "Workflows in the Digital Humanities"
-group: ProjectManagement
+group: projectmanagement
 abstract: "This lesson introduces students to the problems which arise when scholars work with multiple digital and analog tools in their research."
 lessonnumber: 1
 lessonprint: 1
