@@ -3,7 +3,7 @@ layout: sublesson
 structurehead: workflows
 lessontitle: "Digital Workflows"
 title: "Activity: Prototyping"
-group: ProjectManagement
+group: projectmanagement
 abstract: "This activity walks through the various questions and problems that arise when planning a project, showing how prototyping can solve some of these concerns at an early phase in the research." 
 lessonnumber: 8
 lessonprint: 8
