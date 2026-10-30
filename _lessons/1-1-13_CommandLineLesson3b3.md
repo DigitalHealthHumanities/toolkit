@@ -11,6 +11,7 @@ lessonprint: 6
 permalink: /lessons/databasics/commandline/6
 previouslesson: /lessons/databasics/commandline/5
 nextlesson: /lessons/databasics/commandline/7
+authors: spurcell
 split: none
 ---
 
