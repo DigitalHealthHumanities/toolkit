@@ -10,7 +10,7 @@ lessonnumber: 5
 lessonprint: 5
 permalink: /lessons/projectmanagement/metadata/5
 nest: nonest
-previouslesson: /lessons/DB/projectmanagement/metadata/4
+previouslesson: /lessons/projectmanagement/metadata/4
 nextlesson: n/a
 split: none
 authors: spurcell
