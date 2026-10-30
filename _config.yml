@@ -38,11 +38,11 @@ menu:
       - label: 'Digital Basics'
         link: 'lessons/databasics'
       - label: 'Project Management'
-        link: 'lessons/ProjectManagement'
+        link: 'lessons/projectmanagement'
       - label: 'Data Ethics'
         link: 'lessons/dataethics'
   - label: 'White Paper'
-    link: '/white-paper'
+    link: 'https://escholarship.org/uc/item/9kt9c6hd'
   - label: 'Resources'
     link: '/resources'
 
