@@ -3,7 +3,7 @@ layout: sublesson
 structurehead: workflows
 lessontitle: "Digital Workflows"
 title: "Activity: Thinking About Archival Sources in Digital Workflows"
-group: ProjectManagement
+group: projectmanagement
 abstract: "In this lesson, students will look to archival objects to think about the affordances associated with specific research materials." 
 lessonnumber: 5
 lessonprint: 5
