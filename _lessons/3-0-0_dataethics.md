@@ -2,6 +2,6 @@
 layout: lessongroup
 group: dataethics
 title: "Data Ethics"
-description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus."
+description: "This lesson introduces learners to ethical concepts developed in public humanities research, and applies them to issues in the digital health humanities."
 permalink: /lessons/dataethics
 ---
