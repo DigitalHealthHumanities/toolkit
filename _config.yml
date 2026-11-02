@@ -53,11 +53,11 @@ menu:
 
 footer:
   links:
-    - label: 'NEH  |  '  
+    - label: 'NEH|&nbsp;&nbsp;  
       link: 'https://www.neh.gov/'
-    - label: 'UCSF Library  |  ' 
-      link: 'https://www.library.ucsf.edu/'  
-    - label: 'GitHub'
+    - label: 'UCSF Library|'&nbsp;&nbsp; 
+      link: 'https://www.library.ucsf.edu/'
+    - label: 'GitHub'&nbsp;&nbsp;
       link: 'https://github.com/DigitalHealthHumanities/toolkit'
 
 # ---------------------------------------------------------------
